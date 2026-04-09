@@ -1,0 +1,408 @@
+/* ============================================================
+   11-811 Course Website — Main Stylesheet
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cmu-red:   #C41230;
+  --cmu-dark:  #1a1a2e;
+  --accent:    #C41230;
+  --text:      #222;
+  --muted:     #555;
+  --border:    #ddd;
+  --bg-light:  #f7f7f7;
+  --bg-white:  #ffffff;
+  --nav-bg:    #1a1a2e;
+  --nav-text:  #eee;
+  --header-bg: #1a1a2e;
+  --link:      #C41230;
+  --link-hover:#8c0d20;
+  --max-width: 1000px;
+  --font-body: "Georgia", serif;
+  --font-ui:   "Helvetica Neue", Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg-white);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 2.5rem 0 2rem;
+  border-bottom: 4px solid var(--cmu-red);
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.header-title {
+  flex: 1 1 300px;
+}
+
+.course-number {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f0a0a0;
+  margin-bottom: 0.25rem;
+}
+
+header h1 {
+  font-family: var(--font-ui);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.course-semester {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0.35rem;
+}
+
+.header-meta {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: #ccc;
+  text-align: right;
+  flex: 0 0 auto;
+}
+
+.header-meta p { margin-bottom: 0.2rem; }
+.header-meta strong { color: #fff; }
+
+/* ---------- Navigation ---------- */
+nav {
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ddd;
+  transition: background 0.15s, color 0.15s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: var(--cmu-red);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------- Main content ---------- */
+main {
+  padding: 2.5rem 0 4rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section:last-child { margin-bottom: 0; }
+
+h2 {
+  font-family: var(--font-ui);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--cmu-dark);
+  border-bottom: 2px solid var(--cmu-red);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cmu-dark);
+  margin: 1.2rem 0 0.5rem;
+}
+
+p { margin-bottom: 0.9rem; }
+p:last-child { margin-bottom: 0; }
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+
+li { margin-bottom: 0.25rem; }
+
+/* ---------- Info grid (course details) ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.info-item label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.info-item span { color: var(--text); }
+
+/* ---------- Announcements ---------- */
+.announcements {
+  background: #fff8e6;
+  border-left: 4px solid #f0a500;
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 1.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.announcements h3 {
+  color: #b87400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.5rem;
+}
+
+.announcements ul { margin: 0; }
+.announcements li { margin-bottom: 0.35rem; }
+
+/* ---------- Schedule table ---------- */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+}
+
+.schedule-table thead tr {
+  background: var(--cmu-dark);
+  color: #fff;
+}
+
+.schedule-table thead th {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.schedule-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background: var(--bg-light);
+}
+
+.schedule-table tbody tr:hover {
+  background: #eef2ff;
+}
+
+.schedule-table td {
+  padding: 0.65rem 0.85rem;
+  vertical-align: top;
+}
+
+.schedule-table .col-date  { white-space: nowrap; color: var(--muted); width: 90px; }
+.schedule-table .col-week  { white-space: nowrap; color: var(--muted); width: 55px; }
+.schedule-table .col-topic { font-weight: 600; color: var(--cmu-dark); }
+.schedule-table .col-readings { color: var(--muted); }
+.schedule-table .col-due   { color: var(--cmu-red); font-weight: 600; }
+
+.tag {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-right: 0.25rem;
+  margin-bottom: 0.15rem;
+}
+
+.tag-guest   { background: #e8f4fd; color: #1a6fa6; }
+.tag-holiday { background: #f0f0f0; color: #888; }
+.tag-exam    { background: #fde8e8; color: #c41230; }
+.tag-project { background: #e8fde8; color: #1a7a1a; }
+.tag-noclass { background: #f5e6ff; color: #6b21a8; }
+
+/* ---------- Instructors / Staff ---------- */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.staff-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--font-ui);
+}
+
+.staff-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin-bottom: 0.6rem;
+}
+
+.staff-card .staff-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--cmu-dark);
+  display: block;
+}
+
+.staff-card .staff-role {
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.staff-card .staff-oh {
+  font-size: 0.8rem;
+  color: var(--text);
+  display: block;
+}
+
+.staff-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ddd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Policies ---------- */
+.policy-block {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.policy-block h3 {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: var(--cmu-dark);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--cmu-dark);
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+}
+
+footer a { color: #f0a0a0; }
+footer a:hover { color: #fff; }
+
+/* ---------- Utility ---------- */
+.text-muted { color: var(--muted); }
+.text-sm    { font-size: 0.875rem; }
+.mt-1       { margin-top: 0.5rem; }
+.mt-2       { margin-top: 1rem; }
+.badge {
+  display: inline-block;
+  background: var(--cmu-red);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  header .container { flex-direction: column; align-items: flex-start; }
+  .header-meta { text-align: left; }
+
+  nav ul { padding: 0; }
+  nav ul li a { padding: 0.7rem 0.8rem; font-size: 0.8rem; }
+
+  .schedule-table .col-readings,
+  .schedule-table .col-due { display: none; }
+
+  h2 { font-size: 1.1rem; }
+}
