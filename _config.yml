@@ -1,0 +1,13 @@
+title: "11-811"
+description: "Course website for 11-811"
+url: "https://clarana.github.io"
+baseurl: "/11-811"
+
+theme: minima
+
+# Exclude non-site files from the build
+exclude:
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
