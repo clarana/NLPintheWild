@@ -1,0 +1,99 @@
+# Course schedule — single source of truth for the table on the home page.
+# Dates are ISO (YYYY-MM-DD); the home page formats them for display.
+# Optional fields you can add to any row later:
+#   slides: /assets/slides/2026-08-25-intro.pdf
+#   readings: "Author (Year), Title"      # free text or a link
+#   assignment: lab1                       # links the row to a Labs page (by filename)
+#   no_class: true                         # renders the row's topic in italics
+- week: 1
+  date: 2026-08-25
+  topic: "Course overview, syllabus, introductions; brief history of NLP"
+- week: 1
+  date: 2026-08-27
+  topic: "Brief history of NLP. In-class exercise 0: software setup + Python refresher"
+- week: 2
+  date: 2026-09-01
+  topic: "In-class exercise 1: text analysis 101"
+- week: 2
+  date: 2026-09-03
+  topic: "Intro presentations, day 1"
+- week: 3
+  date: 2026-09-08
+  topic: ""
+- week: 3
+  date: 2026-09-10
+  topic: ""
+- week: 4
+  date: 2026-09-15
+  topic: ""
+- week: 4
+  date: 2026-09-17
+  topic: ""
+- week: 5
+  date: 2026-09-22
+  topic: ""
+- week: 5
+  date: 2026-09-24
+  topic: ""
+- week: 6
+  date: 2026-09-29
+  topic: ""
+- week: 6
+  date: 2026-10-01
+  topic: ""
+- week: 7
+  date: 2026-10-06
+  topic: ""
+- week: 7
+  date: 2026-10-08
+  topic: ""
+- week: 8
+  date: 2026-10-13
+  topic: "Fall Break — no class"
+  no_class: true
+- week: 8
+  date: 2026-10-15
+  topic: ""
+- week: 9
+  date: 2026-10-20
+  topic: ""
+- week: 9
+  date: 2026-10-22
+  topic: ""
+- week: 10
+  date: 2026-10-27
+  topic: ""
+- week: 10
+  date: 2026-10-29
+  topic: ""
+- week: 11
+  date: 2026-11-03
+  topic: ""
+- week: 11
+  date: 2026-11-05
+  topic: ""
+- week: 12
+  date: 2026-11-10
+  topic: ""
+- week: 12
+  date: 2026-11-12
+  topic: ""
+- week: 13
+  date: 2026-11-17
+  topic: ""
+- week: 13
+  date: 2026-11-19
+  topic: ""
+- week: 14
+  date: 2026-11-24
+  topic: ""
+- week: 14
+  date: 2026-11-26
+  topic: "Thanksgiving — no class"
+  no_class: true
+- week: 15
+  date: 2026-12-01
+  topic: ""
+- week: 15
+  date: 2026-12-03
+  topic: ""
