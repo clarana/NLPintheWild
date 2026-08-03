@@ -1,0 +1,50 @@
+name: Build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Least-privilege permissions needed to deploy to Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one deployment at a time; don't cancel an in-progress one
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      # If this build step fails (bad front matter, broken Liquid, etc.),
+      # the deploy is skipped and the current live site stays up.
+      - name: Build site with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    # PRs run the build job above as a check; only pushes to main actually deploy.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
