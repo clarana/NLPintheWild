@@ -1,0 +1,23 @@
+{%- comment -%} Top-level tabs: any page with a nav_order, ordered by it. {%- endcomment -%}
+{%- assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+{%- for p in nav_pages -%}
+<li class="nav-item{% if page.url == p.url %} active{% endif %}"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+{%- endfor -%}
+{%- comment -%} Labs dropdown, built from the labs collection. {%- endcomment -%}
+{%- assign labs = site.labs | sort: "nav_order" -%}
+{%- if labs.size > 0 -%}
+<li class="nav-item has-dropdown{% if page.collection == 'labs' %} active{% endif %}">
+  <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Labs <span class="caret" aria-hidden="true">&#9662;</span></a>
+  <ul class="dropdown-menu">
+    {%- for lab in labs -%}
+    <li{% if page.url == lab.url %} class="active"{% endif %}><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</li>
+{%- endif -%}
+{%- comment -%} External links, pushed to the right. {%- endcomment -%}
+{%- if site.external_links -%}
+{%- for link in site.external_links -%}
+<li class="nav-item external{% if forloop.first %} first-external{% endif %}"><a href="{{ link.url }}"{% if link.url contains '//' %} target="_blank" rel="noopener"{% endif %}>{{ link.name }}{% if link.url contains '//' %} <span aria-hidden="true">&#8599;</span>{% endif %}</a></li>
+{%- endfor -%}
+{%- endif -%}

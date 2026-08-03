@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      {% if site.institution %}<p class="eyebrow">{{ site.institution }}</p>{% endif %}
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {% if site.description %}<p class="tagline">{{ site.description }}</p>{% endif %}
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <ul class="nav-list">
+        {% include nav.html %}
+      </ul>
+    </div>
+  </nav>
+
+  <main class="site-main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>{{ site.title }} · {{ site.institution }}</p>
+      {% if site.repository and page.path %}<p class="edit-link"><a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">Edit this page on GitHub</a></p>{% endif %}
+    </div>
+  </footer>
+
+  <script>
+  // Click-to-toggle the Labs dropdown (works on touch and desktop; CSS adds hover on desktop).
+  document.querySelectorAll('.has-dropdown > .dropdown-toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      var li = toggle.parentElement;
+      var isOpen = li.classList.contains('open');
+      document.querySelectorAll('.has-dropdown.open').forEach(function (d) { d.classList.remove('open'); });
+      if (!isOpen) { li.classList.add('open'); toggle.setAttribute('aria-expanded', 'true'); }
+      else { toggle.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown.open').forEach(function (d) {
+        d.classList.remove('open');
+        var t = d.querySelector('.dropdown-toggle');
+        if (t) { t.setAttribute('aria-expanded', 'false'); }
+      });
+    }
+  });
+  </script>
+</body>
+</html>

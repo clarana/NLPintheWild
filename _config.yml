@@ -1,13 +1,49 @@
-title: "11-811"
-description: "Course website for 11-811"
-url: "https://clarana.github.io"
-baseurl: "/11-811"
+title: "11-811: Interdisciplinary NLP"
+description: "Language Modeling in the Wild · Fall 2026"
+url: "https://nlpinthewild.clarasna.com"
+baseurl: ""
 
-theme: minima
+# Shown in the dark site header and footer
+institution: "Carnegie Mellon University · Language Technologies Institute"
+# Used for the "Edit this page on GitHub" footer link
+repository: "clarana/NLPintheWild"
 
-# Exclude non-site files from the build
+# Right-aligned external links in the top nav. Replace "#" with the real URLs.
+external_links:
+  - name: Canvas
+    url: "#"
+  - name: Piazza
+    url: "#"
+
+# ---------------------------------------------------------------------------
+# Assignments collection — Lab 1–4 + the project. Each becomes a page under the
+# "Labs" dropdown in the top nav; ordering/label come from each file's front matter.
+# ---------------------------------------------------------------------------
+collections:
+  labs:
+    output: true
+    permalink: "/labs/:name/"
+
+defaults:
+  - scope:
+      path: ""
+      type: labs
+    values:
+      layout: lab
+
+# On the home page, an assignment's summary = everything ABOVE this marker in its
+# file; the full page = the whole file. Edit one file, both stay in sync.
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build excludes (never exclude CNAME — it sets the custom domain)
 exclude:
   - docs/
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor/
+  - .bundle/
