@@ -25,8 +25,8 @@ nav_order: 1
     - [Part 4: Adapting models to domains](#part-4-adapting-models-to-domains)
   - [Schedule](#schedule)
   - [Assignments](#assignments)
-    - [Labs \& project](#labs--project)
-    - [Reflections: details \& prompts](#reflections-details--prompts)
+    - [Labs and project](#labs-and-project)
+    - [Reflections](#reflections)
   - [Policies](#policies)
 
 
@@ -162,7 +162,7 @@ Grades are based on a combination of individual and group work.
 
 **Project (36 points).** (Group.) A semester-long 2-4 person team project focused on carrying out a research goal within a particular domain of interest to people in a non-NLP discipline. There will be intermediate assignments and exercises (project proposal, project sharing, writing abstracts for each other's publication audiences) as well as a final presentation and report. More details below and in class.
 
-### Labs &amp; project
+### Labs and project
 {% assign labs = site.labs | sort: "nav_order" %}
 {% for lab in labs %}
 <div class="assignment-summary">
@@ -171,7 +171,7 @@ Grades are based on a combination of individual and group work.
 </div>
 {% endfor %}
 
-### Reflections: details &amp; prompts
+### Reflections
 
 Throughout the semester, students will be asked to submit short written reflections based on ongoing work they have done for the class, through in-class activities, lab assignments, and course project work. Specific formats will vary, but many reflections will mirror the following format:
 
