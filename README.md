@@ -1,18 +1,17 @@
 # 11-811 course website
 
-Source for **<https://nlpinthewild.clarasna.com>** — *11-811: Interdisciplinary NLP* (CMU, Fall 2026).
+Source for **<https://nlpinthewild.clarasna.com>** – *11-811: Interdisciplinary NLP* (CMU, Fall 2026).
 
-Built with [Jekyll](https://jekyllrb.com) and the [Just the Docs](https://just-the-docs.com) theme.
+Built with [Jekyll](https://jekyllrb.com) and a small custom layout.
 Every push to `main` is automatically built and deployed by GitHub Actions
-(`.github/workflows/pages.yml`). **If a build fails, the previous site stays up** — a broken
-edit can't take the site down.
+(`.github/workflows/pages.yml`). **If a build fails, the previous site stays up.**
 
 The rest of this file is a practical guide to editing the site, for instructors and for
 students who'd like to suggest content.
 
 ## Where things live
 
-| To change… | Edit… |
+| To change: | Edit: |
 |---|---|
 | Home page (overview, logistics, schedule, assignment summaries, policies) | `index.md` |
 | Readings & resources | `readings.md` |
@@ -74,13 +73,13 @@ nav_order: 5        # position in the sidebar
 **Hide a page until it's ready.** Add `nav_exclude: true` (keeps it off the sidebar) or
 `published: false` (leaves it out of the build entirely).
 
-## Suggesting a change — no setup required
+## Suggesting a change (no setup required)
 
 You can propose an edit entirely in the browser, with nothing to install. This is the
 recommended path for students, and for quick fixes:
 
-1. On any page of the live site, click **"Edit this page on GitHub"** at the bottom — or open
-   the file here in the repo and click the ✏️ pencil.
+1. On any page of the live site, click **"View this page's source on GitHub"** at the bottom to
+   open that page's source file, then click the ✏️ pencil to edit.
 2. Make your changes in the editor.
 3. Click **Commit changes / Propose changes**. GitHub will walk you through opening a **pull
    request** (creating a fork or branch for you automatically if needed).
