@@ -166,8 +166,8 @@ pre code { background: none; padding: 0; }
   margin-top: 2rem;
 }
 .site-footer p { margin: 0 0 .25rem; }
-.site-footer .edit-link a { color: var(--muted); }
-.site-footer .edit-link a:hover { color: var(--cmu-red); }
+.site-footer .source-link a { color: var(--muted); }
+.site-footer .source-link a:hover { color: var(--cmu-red); }
 
 /* ---------- Expandable topic blocks ---------- */
 details.topic {

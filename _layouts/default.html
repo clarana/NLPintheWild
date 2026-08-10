@@ -32,7 +32,7 @@
   <footer class="site-footer">
     <div class="container">
       <p>{{ site.title }} · {{ site.institution }}</p>
-      {% if site.repository and page.path %}<p class="edit-link"><a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">Edit this page on GitHub</a></p>{% endif %}
+      {% if site.repository and page.path %}<p class="source-link"><a href="https://github.com/{{ site.repository }}/blob/main/{{ page.path }}">View this page's source on GitHub</a></p>{% endif %}
     </div>
   </footer>
 
