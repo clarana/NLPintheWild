@@ -19,10 +19,6 @@ nav_order: 1
     - [Who are you?](#who-are-you)
     - [Logistics](#logistics)
   - [Topics](#topics)
-    - [Part 1: Text as data and language technologies](#part-1-text-as-data-and-language-technologies)
-    - [Part 2: Navigating tools and affordances](#part-2-navigating-tools-and-affordances)
-    - [Part 3: Data curation and evaluation](#part-3-data-curation-and-evaluation)
-    - [Part 4: Adapting models to domains](#part-4-adapting-models-to-domains)
   - [Schedule](#schedule)
   - [Assignments](#assignments)
     - [Labs and project](#labs-and-project)
@@ -78,10 +74,12 @@ A detailed syllabus is forthcoming. Please feel free to reach out to the instruc
 
 In this course, students will do natural language processing "in the wild" to conduct research in a specialized domain: they will build a text-based dataset, measure and make claims about their data, and adapt language technologies to their dataset.
 
-### Part 1: Text as data and language technologies
+<details class="topic" id="part-1-text-as-data-and-language-technologies" markdown="1">
+<summary>Part 1: Text as data and language technologies</summary>
+
 Students will begin by exploring general techniques and tools for analyzing text as data. Students will consider a historical perspective of natural language processing, learning about assumptions and tools for language processing that have evolved throughout the years, as well as underlying paradigms and constraints that have persisted even as our methods and surroundings have shifted.
 
-Students will implement and compare various ways to encode language and text as information that one can study with a computer; by the end of the unit, students will be familiar with common use cases and limitations of methods for exploratory text data analysis, spanning command line tools, programming language-native functions, off-the-shelf libraries for natural language processing, and custom implementations. In particular, students will gain an understanding of differences in common methods and assumptions’ relevance across different settings; certain differences in domain or motivation may simply call for adjusted hyperparameters, while others may warrant entirely different toolsets or additional processing of text.
+Students will implement and compare various ways to encode language and text as information that one can study with a computer; by the end of the unit, students will be familiar with common use cases and limitations of methods for exploratory text data analysis, spanning command line tools, programming language-native functions, off-the-shelf libraries for natural language processing, and custom implementations. In particular, students will gain an understanding of differences in common methods and assumptions' relevance across different settings; certain differences in domain or motivation may simply call for adjusted hyperparameters, while others may warrant entirely different toolsets or additional processing of text.
 
 Examples of concepts and tools students will encounter:
 - How to represent and model language, and at what level?
@@ -94,7 +92,11 @@ Examples of concepts and tools students will encounter:
   - Tagging language with predetermined labels (e.g. named entity recognition or sequence classification), or describing language in relative terms (e.g. LDA topic models)
 
 
-### Part 2: Navigating tools and affordances
+</details>
+
+<details class="topic" id="part-2-navigating-tools-and-affordances" markdown="1">
+<summary>Part 2: Navigating tools and affordances</summary>
+
 In the second section, students will build their own corpus. Throughout, students will repeatedly confront the challenge of determining 1) what work needs to be done, 2) what tools already exist for performing this work, and 3) how well-suited existing tools are. In general, students will practice thinking about data, algorithms, metrics, settings, models, software, and hardware as affordances they may consider for off-the-shelf use to achieve some or even most aspects of their goals. 
 
 Examples of concepts and tools students will engage with:
@@ -103,7 +105,11 @@ Examples of concepts and tools students will engage with:
 - Large language models, MCPs, and agents
 - Data governance (e.g. licenses, filters, provenance, privacy)
 
-### Part 3: Data curation and evaluation
+</details>
+
+<details class="topic" id="part-3-data-curation-and-evaluation" markdown="1">
+<summary>Part 3: Data curation and evaluation</summary>
+
 In the next section, students will choose appropriate evaluation protocols, assess the quality and suitability of evaluation protocols themselves, and both specify and perform data annotation labor as they consider ways to answer their specific research questions.
 
 Examples of concepts and tools students will engage with:
@@ -113,15 +119,20 @@ Examples of concepts and tools students will engage with:
 - Quantitative and qualitative analysis
 - "In domain" vs out-of-distribution data
 
-### Part 4: Adapting models to domains
+</details>
+
+<details class="topic" id="part-4-adapting-models-to-domains" markdown="1">
+<summary>Part 4: Adapting models to domains</summary>
+
 In the final section of the course, students will consider and try various methods for adapting existing models to their use cases, with a deep focus on LLMs. Methods discussed will span light-weight context augmentation (e.g. in-context learning), resource-intensive pre-training from scratch, and many techniques in-between. Notably, techniques do not fall along a universal one-dimensional scale in either cost or complexity. 
 
 Examples of concepts and tools students will engage with:
 - In-context adaptation (e.g. few-shot learning, system prompts, agent skills, retrieval augmented generation)
-- Parametric adaptation (e.g. supervised fine-tuning, “mid-training”, reinforcement learning, offline or online model merging)
+- Parametric adaptation (e.g. supervised fine-tuning, "mid-training", reinforcement learning, offline or online model merging)
 - Synthetic data generation 
 - Lifelong / continual learning
 
+</details>
 
 ## Schedule
 

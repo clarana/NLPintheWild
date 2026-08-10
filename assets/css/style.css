@@ -169,6 +169,25 @@ pre code { background: none; padding: 0; }
 .site-footer .edit-link a { color: var(--muted); }
 .site-footer .edit-link a:hover { color: var(--cmu-red); }
 
+/* ---------- Expandable topic blocks ---------- */
+details.topic {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-soft);
+  margin: 0 0 .6rem;
+  padding: 0 .9rem;
+}
+details.topic > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink);
+  padding: .7rem 0;
+}
+details.topic > summary:hover { color: var(--cmu-red); }
+details.topic[open] { padding-bottom: .8rem; }
+details.topic[open] > summary { border-bottom: 1px solid var(--border); margin-bottom: .7rem; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .site-header .site-title { font-size: 1.6rem; }
