@@ -136,23 +136,48 @@ Examples of concepts and tools students will engage with:
 
 ## Schedule
 
-Dates are tentative and subject to change. Readings and materials will be posted as the semester progresses.
+Dates are tentative and subject to change. In-class exercise materials, assignment links, and readings will be posted here as the semester progresses. Unless stated otherwise, all assignments are due at **11:59pm Eastern (ET)** on the listed date.
 
-<table>
+<!-- The color rail on the left marks which course Part each class belongs to: -->
+<div class="unit-legend" markdown="0">
+  <a class="unit-chip u1" href="#part-1-text-as-data-and-language-technologies">Part 1 · Text as data</a>
+  <a class="unit-chip u2" href="#part-2-navigating-tools-and-affordances">Part 2 · Tools and affordances</a>
+  <a class="unit-chip u3" href="#part-3-data-curation-and-evaluation">Part 3 · Data curation and evaluation</a>
+  <a class="unit-chip u4" href="#part-4-adapting-models-to-domains">Part 4 · Adapting models</a>
+</div>
+
+<div class="table-scroll" markdown="0">
+<table class="schedule">
   <thead>
-    <tr><th>Week</th><th>Date</th><th>Topic</th><th>Materials</th></tr>
+    <tr>
+      <th>Wk</th>
+      <th>Date</th>
+      <th>Lecture</th>
+      <th>In-class activity</th>
+      <th>Assignments</th>
+      <th>Readings &amp; resources</th>
+    </tr>
   </thead>
   <tbody>
+  {% assign prev_week = "" %}
   {% for s in site.data.schedule %}
-    <tr>
-      <td>{{ s.week }}</td>
-      <td>{{ s.date | date: "%a %b %-d" }}</td>
-      <td>{% if s.no_class %}<em>{{ s.topic }}</em>{% else %}{{ s.topic }}{% endif %}</td>
-      <td>{% if s.slides %}<a href="{{ s.slides | relative_url }}">slides</a>{% endif %}</td>
+    {% assign row_class = "" %}
+    {% if s.unit %}{% assign row_class = row_class | append: " u" | append: s.unit %}{% endif %}
+    {% if s.week and s.week != prev_week %}{% assign row_class = row_class | append: " week-start" %}{% endif %}
+    {% if s.no_class %}{% assign row_class = row_class | append: " no-class" %}{% endif %}
+    <tr{% if row_class != "" %} class="{{ row_class | strip }}"{% endif %}>
+      <td>{% if s.week and s.week != prev_week %}{{ s.week }}{% endif %}</td>
+      <td>{% if s.date %}{{ s.date | date: "%a %b %-d" }}{% elsif s.date_label %}{{ s.date_label }}{% else %}TBD{% endif %}</td>
+      <td>{% if s.no_class %}<em>{{ s.lecture }}</em>{% else %}{% if s.lecture_no %}<span class="lec-no">L{{ s.lecture_no }}</span> {% endif %}{{ s.lecture }}{% if s.slides %} <a href="{{ s.slides | relative_url }}">(slides)</a>{% endif %}{% endif %}</td>
+      <td>{% for a in s.activity %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
+      <td>{% for a in s.assignments %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
+      <td>{% for a in s.readings %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
     </tr>
+    {% if s.week %}{% assign prev_week = s.week %}{% endif %}
   {% endfor %}
   </tbody>
 </table>
+</div>
 
 ## Assignments
 
@@ -177,7 +202,7 @@ Grades are based on a combination of individual and group work.
 {% assign labs = site.labs | sort: "nav_order" %}
 {% for lab in labs %}
 <div class="assignment-summary">
-  <h4 style="margin-bottom:.2em"><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a> <small>— {% if lab.due %}due {{ lab.due | date: "%b %-d, %Y" }}{% else %}due TBD{% endif %}{% if lab.points %}, {{ lab.points }} pts{% endif %}</small></h4>
+  <h4 style="margin-bottom:.2em"><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a> <small>&ndash; {% if lab.due %}due {{ lab.due | date: "%b %-d, %Y" }}, 11:59pm ET{% else %}due TBD{% endif %}{% if lab.points %}, {{ lab.points }} pts{% endif %}</small></h4>
   {{ lab.excerpt }}
 </div>
 {% endfor %}
@@ -209,7 +234,7 @@ Given a language technology discussed in class, that you used during an assignme
 
 ## Policies
 
-**Late Work:** TBD
+**Late Work:** Unless stated otherwise, assignments are due at 11:59pm Eastern (ET) on the date listed in the schedule. Every student receives **5 late days** to spend across **individual** assignments over the semester, and every project group receives a separate **5 late days** to spend across **group** assignments. One late day extends a deadline by 24 hours, and late days are used in whole-day increments. Group late days draw from the group's shared pool, not from any individual's allotment. Handling of submissions past a student's or group's remaining late days is TBD.
 
 **Academic Integrity:** TBD
 

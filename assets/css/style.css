@@ -129,6 +129,40 @@ a:hover { color: var(--cmu-red-dark); text-decoration: underline; }
 .site-main thead th { background: var(--bg-soft); font-weight: 600; }
 .site-main tbody tr:nth-child(even) { background: #fbfbfc; }
 
+/* Schedule table */
+.table-scroll { overflow-x: auto; margin: 0 0 1.25rem; }
+.table-scroll table { margin-bottom: 0; }
+.site-main .schedule { font-size: .9rem; }
+.site-main .schedule th:first-child,
+.site-main .schedule td:first-child { width: 2.2rem; text-align: center; color: #666; font-weight: 600; }
+.site-main .schedule tr.week-start > td { border-top: 2px solid var(--border); }
+.site-main .schedule tr.no-class td { color: #8a8a8a; }
+
+/* Lecture-number badge */
+.site-main .schedule .lec-no {
+  display: inline-block; margin-right: .35em; padding: 0 .35em;
+  border-radius: 3px; background: var(--bg-soft); border: 1px solid var(--border);
+  font-size: .78em; font-weight: 600; color: #555; vertical-align: baseline;
+}
+
+/* Unit color rail (left edge of each row) + legend chips.
+   Colors: 1 blue, 2 teal, 3 amber, 4 purple. */
+.site-main .schedule tr.u1 td:first-child { border-left: 5px solid #3D6FB4; }
+.site-main .schedule tr.u2 td:first-child { border-left: 5px solid #2E8B72; }
+.site-main .schedule tr.u3 td:first-child { border-left: 5px solid #C98A1B; }
+.site-main .schedule tr.u4 td:first-child { border-left: 5px solid #8E5AA6; }
+
+.unit-legend { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
+.unit-chip {
+  display: inline-block; padding: .12rem .55rem; border-radius: 999px;
+  font-size: .82rem; text-decoration: none; color: #fff; border: 1px solid rgba(0,0,0,.08);
+}
+.unit-chip.u1 { background: #3D6FB4; }
+.unit-chip.u2 { background: #2E8B72; }
+.unit-chip.u3 { background: #C98A1B; }
+.unit-chip.u4 { background: #8E5AA6; }
+.unit-chip:hover { filter: brightness(1.08); }
+
 /* ---------- Assignment summary cards (home page) ---------- */
 .assignment-summary {
   border: 1px solid var(--border);

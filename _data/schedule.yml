@@ -1,99 +1,324 @@
-# Course schedule — single source of truth for the table on the home page.
-# Dates are ISO (YYYY-MM-DD); the home page formats them for display.
-# Optional fields you can add to any row later:
-#   slides: /assets/slides/2026-08-25-intro.pdf
-#   readings: "Author (Year), Title"      # free text or a link
-#   assignment: lab1                       # links the row to a Labs page (by filename)
-#   no_class: true                         # renders the row's topic in italics
+# Course schedule - single source of truth for the table on the home page.
+# Source: course planning sheet, tab "group formation before intro presentations".
+# Only PUBLIC columns are stored here (sheet columns A-G). The private planning
+# columns (Tentative Speaker, internal notes) are intentionally NOT included.
+#
+# Fields per row:
+#   week:        integer. Grouping label; shown once per week in the table.
+#   class_no:    integer. Session number. Kept for reference; not rendered.
+#   lecture_no:  integer. Running LECTURE count; shown as an "L#" badge.
+#                Omit on activity-only days, holidays, and non-lecture sessions.
+#   unit:        1-4. Course Part the session belongs to; drives the color rail.
+#                (1 = Text as data, 2 = Navigating tools, 3 = Data curation and
+#                 evaluation, 4 = Adapting models to domains.) Boundaries at the
+#                transition classes are a judgment call -- easy to move.
+#   date:        ISO YYYY-MM-DD. The home page formats it for display.
+#   date_label:  free text, used INSTEAD of `date` when there is no fixed date.
+#   lecture:     lecture topic (blank on activity-only days).
+#   activity:    LIST of in-class activity items; each renders on its own line.
+#                Markdown is allowed, so you can add links later.
+#   assignments: LIST of release/due items; each on its own line. Markdown OK.
+#                Deadlines are 11:59pm ET (stated once above the table).
+#   readings:    LIST of readings / resources; each on its own line. Markdown OK.
+#   slides:      optional path, e.g. /assets/slides/2026-08-25-intro.pdf.
+#                When present, a "(slides)" link appears next to the lecture.
+#   no_class:    true renders the row's lecture in italics (breaks, holidays).
+
+# --- Week 1 · Unit 1 ---
 - week: 1
+  class_no: 1
+  lecture_no: 1
+  unit: 1
   date: 2026-08-25
-  topic: "Course overview, syllabus, introductions; brief history of NLP"
+  lecture: "Course overview, syllabus"
+  activity:
+    - "Introductions"
+  assignments:
+    - "Info form (expertise, background, goals) due"
 - week: 1
+  class_no: 2
+  lecture_no: 2
+  unit: 1
   date: 2026-08-27
-  topic: "Brief history of NLP. In-class exercise 0: software setup + Python refresher"
+  lecture: "A brief history of NLP"
+  activity:
+    - "Exercise 1: Software setup + Python textercises"
+
+# --- Week 2 · Unit 1 ---
 - week: 2
+  class_no: 3
+  lecture_no: 3
+  unit: 1
   date: 2026-09-01
-  topic: "In-class exercise 1: text analysis 101"
+  lecture: "Representing and encoding text"
+  activity:
+    - "Exercise 2: Topic modeling"
+  assignments:
+    - "Lab 1 released"
 - week: 2
+  class_no: 4
+  lecture_no: 4
+  unit: 1
   date: 2026-09-03
-  topic: "Intro presentations, day 1"
+  lecture: "Guest lecture: What is meaning?"
+  activity:
+    - "Reflection assignment introduced (if time)"
+
+# --- Week 3 · Unit 1 ---
 - week: 3
+  class_no: 5
+  lecture_no: 5
+  unit: 1
   date: 2026-09-08
-  topic: ""
+  lecture: "Representing and modeling meaning"
+  activity:
+    - "Exercise 3: Text analysis"
+  assignments:
+    - "Reflection 1 due (pre-registered hypotheses)"
+  readings:
+    - "[semantle.com](https://semantle.com)"
+    - "[AI paint colors](https://www.aiweirdness.com/new-ai-paint-colors/)"
 - week: 3
+  class_no: 6
+  lecture_no: 6
+  unit: 1
   date: 2026-09-10
-  topic: ""
+  lecture: "Families of problems"
+  activity:
+    - "Exercise 4: Open-ended corpus exploration"
+    - "Project group formation"
+  assignments:
+    - "Lab 1 Part 1 due"
+
+# --- Week 4 · Unit 2 ---
 - week: 4
+  class_no: 7
+  lecture_no: 7
+  unit: 2
   date: 2026-09-15
-  topic: ""
+  lecture: "Pre- and post-processing"
+  activity:
+    - "Exercise 5: Corpus collection"
 - week: 4
+  class_no: 8
+  lecture_no: 8
+  unit: 2
   date: 2026-09-17
-  topic: ""
+  lecture: "The Internet"
+  activity:
+    - "Exercise 6: Web scraping and APIs"
+    - "Intro presentation prep begins"
+  assignments:
+    - "Lab 1 Part 2 due"
+    - "Lab 2 released"
+    - "Presentation sign-ups open"
+
+# --- Week 5 · Unit 2 ---
 - week: 5
+  class_no: 9
+  lecture_no: 9
+  unit: 2
   date: 2026-09-22
-  topic: ""
+  lecture: "Storing and navigating data"
+  activity:
+    - "Exercise 7: Scavenger hunt"
+    - "Post-Lab 1 activity"
 - week: 5
+  class_no: 10
+  unit: 2
   date: 2026-09-24
-  topic: ""
+  lecture: ""
+  activity:
+    - "Intro presentations I"
+  assignments:
+    - "Reflection 2 due (post-Lab 1 activity)"
+
+# --- Week 6 · Unit 2 ---
 - week: 6
+  class_no: 11
+  unit: 2
   date: 2026-09-29
-  topic: ""
+  lecture: ""
+  activity:
+    - "Intro presentations II"
+  assignments:
+    - "Project proposal due"
 - week: 6
+  class_no: 12
+  lecture_no: 10
+  unit: 2
   date: 2026-10-01
-  topic: ""
+  lecture: "Choosing tools"
+  activity:
+    - "Exercise 8: LLM inference"
+  assignments:
+    - "Lab 2 due"
+    - "Lab 3 released"
+
+# --- Week 7 · Unit 3 ---
 - week: 7
+  class_no: 13
+  lecture_no: 11
+  unit: 3
   date: 2026-10-06
-  topic: ""
+  lecture: "Evaluation"
+  activity:
+    - "Post-Lab 2 activity"
 - week: 7
+  class_no: 14
+  lecture_no: 12
+  unit: 3
   date: 2026-10-08
-  topic: ""
+  lecture: "Guest lecture: Annotation"
+  activity:
+    - "Project workshop"
+  assignments:
+    - "Reflection 3 due (post-Lab 2 activity)"
+
+# --- Week 8: Fall Break · Unit 3 ---
 - week: 8
+  unit: 3
   date: 2026-10-13
-  topic: "Fall Break — no class"
+  lecture: "Fall Break (no class)"
   no_class: true
-- week: 8
+- unit: 3
   date: 2026-10-15
-  topic: ""
-- week: 9
-  date: 2026-10-20
-  topic: ""
-- week: 9
-  date: 2026-10-22
-  topic: ""
-- week: 10
-  date: 2026-10-27
-  topic: ""
-- week: 10
-  date: 2026-10-29
-  topic: ""
-- week: 11
-  date: 2026-11-03
-  topic: ""
-- week: 11
-  date: 2026-11-05
-  topic: ""
-- week: 12
-  date: 2026-11-10
-  topic: ""
-- week: 12
-  date: 2026-11-12
-  topic: ""
-- week: 13
-  date: 2026-11-17
-  topic: ""
-- week: 13
-  date: 2026-11-19
-  topic: ""
-- week: 14
-  date: 2026-11-24
-  topic: ""
-- week: 14
-  date: 2026-11-26
-  topic: "Thanksgiving — no class"
+  lecture: "Fall Break (no class)"
   no_class: true
+
+# --- Week 9 · Unit 3 ---
+- week: 9
+  class_no: 15
+  lecture_no: 13
+  unit: 3
+  date: 2026-10-20
+  lecture: "Evaluation of evaluation"
+  activity:
+    - "Exercise 9: Annotation and agreement"
+- week: 9
+  class_no: 16
+  unit: 3
+  date: 2026-10-22
+  lecture: ""
+  activity:
+    - "Project workshop"
+  assignments:
+    - "Reflection 4 due (annotation and agreement)"
+
+# --- Week 10 · Unit 3 ---
+- week: 10
+  class_no: 17
+  lecture_no: 14
+  unit: 3
+  date: 2026-10-27
+  lecture: "Qualitative analysis"
+  activity:
+    - "Exercise 10: Developing a codebook"
+- week: 10
+  class_no: 18
+  lecture_no: 15
+  unit: 3
+  date: 2026-10-29
+  lecture: "Assessing data and metric fit"
+  activity:
+    - "Exercise 11: Propose your own project rubric"
+  assignments:
+    - "Lab 3 due"
+    - "Lab 4 released"
+
+# --- Week 11 · Unit 4 ---
+- week: 11
+  unit: 4
+  date: 2026-11-03
+  lecture: "Election Day (no class)"
+  no_class: true
+- class_no: 19
+  unit: 4
+  date: 2026-11-05
+  lecture: ""
+  activity:
+    - "Post-Lab 3 activity"
+    - "Project workshop"
+  assignments:
+    - "Project rubric due (propose your own)"
+
+# --- Week 12 · Unit 4 ---
+- week: 12
+  class_no: 20
+  lecture_no: 16
+  unit: 4
+  date: 2026-11-10
+  lecture: "Leveraging existing models and data"
+  activity:
+    - "Exercise 12: ICL vs. RAG vs. fine-tuning"
+  assignments:
+    - "Reflection 5 due (post-Lab 3 activity)"
+- week: 12
+  class_no: 21
+  lecture_no: 17
+  unit: 4
+  date: 2026-11-12
+  lecture: "Domain adaptation vs. generalization"
+  activity:
+    - "Cross-disciplinary writing exercise"
+
+# --- Week 13 · Unit 4 ---
+- week: 13
+  class_no: 22
+  unit: 4
+  date: 2026-11-17
+  lecture: ""
+  activity:
+    - "Project workshop (check-ins)"
+  assignments:
+    - "Cross-disciplinary writing exercise due"
+- week: 13
+  class_no: 23
+  lecture_no: 18
+  unit: 4
+  date: 2026-11-19
+  lecture: "Synthetic data"
+  activity:
+    - "Exercise 13: Training on synthetic data"
+  assignments:
+    - "Lab 4 due"
+
+# --- Week 14 · Unit 4 ---
+- week: 14
+  class_no: 24
+  lecture_no: 19
+  unit: 4
+  date: 2026-11-24
+  lecture: "Lifelong learning"
+  activity:
+    - "Post-Lab 4 activity"
+- unit: 4
+  date: 2026-11-26
+  lecture: "Thanksgiving (no class)"
+  no_class: true
+
+# --- Week 15 · Unit 4 ---
 - week: 15
+  class_no: 25
+  lecture_no: 20
+  unit: 4
   date: 2026-12-01
-  topic: ""
+  lecture: "What's not covered in this class?"
+  activity:
+    - "TBD"
+  assignments:
+    - "Reflection 6 due (post-Lab 4 activity)"
 - week: 15
+  class_no: 26
+  unit: 4
   date: 2026-12-03
-  topic: ""
+  lecture: "Final presentations"
+  activity: []
+
+# --- Finals week · Unit 4 ---
+- week: 16
+  unit: 4
+  date_label: "Finals week"
+  lecture: ""
+  assignments:
+    - "Final report due"
