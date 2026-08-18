@@ -19,6 +19,10 @@
 #                Markdown is allowed, so you can add links later.
 #   assignments: LIST of release/due items; each on its own line. Markdown OK.
 #                Deadlines are 11:59pm ET (stated once above the table).
+#                An item may be a plain string, OR an object to attach a badge:
+#                  - text: "Lab 1 released"
+#                    tag: lab      # renders a "lab" pill
+#                Use tag: lab for Lab items, tag: prj for course-project items.
 #   readings:    LIST of readings / resources; each on its own line. Markdown OK.
 #   slides:      optional path, e.g. /assets/slides/2026-08-25-intro.pdf.
 #                When present, a "(slides)" link appears next to the lecture.
@@ -54,7 +58,8 @@
   activity:
     - "Exercise 2: Topic modeling"
   assignments:
-    - "Lab 1 released"
+    - text: "Lab 1 released"
+      tag: lab
 - week: 2
   class_no: 4
   lecture_no: 4
@@ -88,7 +93,8 @@
     - "Exercise 4: Open-ended corpus exploration"
     - "Project group formation"
   assignments:
-    - "Lab 1 Part 1 due"
+    - text: "Lab 1 Part 1 due"
+      tag: lab
 
 # --- Week 4 · Unit 2 ---
 - week: 4
@@ -109,8 +115,10 @@
     - "Exercise 6: Web scraping and APIs"
     - "Intro presentation prep begins"
   assignments:
-    - "Lab 1 Part 2 due"
-    - "Lab 2 released"
+    - text: "Lab 1 Part 2 due"
+      tag: lab
+    - text: "Lab 2 released"
+      tag: lab
     - "Presentation sign-ups open"
 
 # --- Week 5 · Unit 2 ---
@@ -142,7 +150,8 @@
   activity:
     - "Intro presentations II"
   assignments:
-    - "Project proposal due"
+    - text: "Project proposal due"
+      tag: prj
 - week: 6
   class_no: 12
   lecture_no: 10
@@ -152,8 +161,10 @@
   activity:
     - "Exercise 8: LLM inference"
   assignments:
-    - "Lab 2 due"
-    - "Lab 3 released"
+    - text: "Lab 2 due"
+      tag: lab
+    - text: "Lab 3 released"
+      tag: lab
 
 # --- Week 7 · Unit 3 ---
 - week: 7
@@ -221,10 +232,12 @@
   date: 2026-10-29
   lecture: "Assessing data and metric fit"
   activity:
-    - "Exercise 11: Propose your own project rubric"
+    - "Propose your own project rubric"
   assignments:
-    - "Lab 3 due"
-    - "Lab 4 released"
+    - text: "Lab 3 due"
+      tag: lab
+    - text: "Lab 4 released"
+      tag: lab
 
 # --- Week 11 · Unit 4 ---
 - week: 11
@@ -240,7 +253,8 @@
     - "Post-Lab 3 activity"
     - "Project workshop"
   assignments:
-    - "Project rubric due (propose your own)"
+    - text: "Project rubric due (propose your own)"
+      tag: prj
 
 # --- Week 12 · Unit 4 ---
 - week: 12
@@ -250,7 +264,7 @@
   date: 2026-11-10
   lecture: "Leveraging existing models and data"
   activity:
-    - "Exercise 12: ICL vs. RAG vs. fine-tuning"
+    - "Exercise 11: ICL vs. RAG vs. fine-tuning"
   assignments:
     - "Reflection 5 due (post-Lab 3 activity)"
 - week: 12
@@ -271,7 +285,8 @@
   activity:
     - "Project workshop (check-ins)"
   assignments:
-    - "Cross-disciplinary writing exercise due"
+    - text: "Cross-disciplinary writing exercise due"
+      tag: prj
 - week: 13
   class_no: 23
   lecture_no: 18
@@ -279,9 +294,10 @@
   date: 2026-11-19
   lecture: "Synthetic data"
   activity:
-    - "Exercise 13: Training on synthetic data"
+    - "Exercise 12: Training on synthetic data"
   assignments:
-    - "Lab 4 due"
+    - text: "Lab 4 due"
+      tag: lab
 
 # --- Week 14 · Unit 4 ---
 - week: 14
@@ -321,4 +337,5 @@
   date_label: "Finals week"
   lecture: ""
   assignments:
-    - "Final report due"
+    - text: "Final report due"
+      tag: prj

@@ -24,6 +24,7 @@ nav_order: 1
     - [Labs and project](#labs-and-project)
     - [Reflections](#reflections)
   - [Policies](#policies)
+  - [FAQ (ongoing)](#faq-ongoing)
 
 
 
@@ -170,7 +171,7 @@ Dates are tentative and subject to change. In-class exercise materials, assignme
       <td>{% if s.date %}{{ s.date | date: "%a %b %-d" }}{% elsif s.date_label %}{{ s.date_label }}{% else %}TBD{% endif %}</td>
       <td>{% if s.no_class %}<em>{{ s.lecture }}</em>{% else %}{% if s.lecture_no %}<span class="lec-no">L{{ s.lecture_no }}</span> {% endif %}{{ s.lecture }}{% if s.slides %} <a href="{{ s.slides | relative_url }}">(slides)</a>{% endif %}{% endif %}</td>
       <td>{% for a in s.activity %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
-      <td>{% for a in s.assignments %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
+      <td>{% for a in s.assignments %}{% if a.text %}{% if a.tag %}<span class="atag atag-{{ a.tag }}">{{ a.tag }}</span> {% endif %}{{ a.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% else %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
       <td>{% for a in s.readings %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
     </tr>
     {% if s.week %}{% assign prev_week = s.week %}{% endif %}
@@ -234,10 +235,27 @@ Given a language technology discussed in class, that you used during an assignme
 
 ## Policies
 
-**Late Work:** Unless stated otherwise, assignments are due at 11:59pm Eastern (ET) on the date listed in the schedule. Every student receives **5 late days** to spend across **individual** assignments over the semester, and every project group receives a separate **5 late days** to spend across **group** assignments. One late day extends a deadline by 24 hours, and late days are used in whole-day increments. Group late days draw from the group's shared pool, not from any individual's allotment. Handling of submissions past a student's or group's remaining late days is TBD.
+**Late Work:** Unless stated otherwise, assignments are due at 11:59pm Eastern (ET) on the date listed in the schedule. Every student begins the semester with 5 late days to use across individual assignments over the semester, and every project group receives a separate 5 late days to use across group assignments. One late day extends a deadline by 24 hours, and late days are used in whole-day increments. Late work will be accepted with a penalty unless otherwise stated (e.g. end of semester presentations). Late days will be applied automatically (no need to ask ahead of time or state a specific reason!) and are meant to cover most situations that would warrant an extension, including but not limited to conference travel, minor illness, competing deadlines, and (minor) personal emergencies. For extenuating circumstances beyond what standard late days can cover, contact the instructors.
 
-**Academic Integrity:** TBD
+**Academic Integrity:** Throughout the semester, students will be asked to complete work individually, in groups, and using various types and amounts of technology. Different components of the same assignment may vary in expectation; expectations and learning objectives will be explicitly communicated to students.  In general, students are asked to uphold the spirit of each assignment. When in doubt, ask on Piazza
 
 **Accommodations:** Students with disabilities who require accommodations should contact the [Office of Disability Resources](https://www.cmu.edu/disability-resources/) and notify the instructors early in the semester.
 
 **Wellness:** Take care of yourself. CMU offers support through [Counseling &amp; Psychological Services (CaPS)](https://www.cmu.edu/counseling/).
+
+## FAQ (ongoing)
+
+<details class="faq" markdown="1">
+<summary>Do I need my own dataset or research question already?</summary>
+
+No, but you are more than welcome to join the class with a specific dataset or research question in mind already! All students will be asked to refine a research question in the context of the resources and technology available to them, and to acquire or develop resources in service of their project.
+</details>
+
+
+<details class="faq" markdown="1">
+<summary>Do expectations for Group A and Group B students differ?</summary>
+
+All students will be expected to complete all assignments. Already having experience with a particular topic or tool (e.g. setting up an annotation study, or training a model) may put a student in a position to assist other students with some in-class exercises. However, in general, the course and its assignments are designed to emphasize reflection, collaboration, and critical engagement with tools and their limitations. By design, assignments will be non-trivial to complete regardless of previous experience-- in fact, students will often be provided implementations of tools to use in assignments, and in many cases a majority of the work expected of students will be reflective and interpretative. 
+
+Course projects will be assessed on a case-by-case basis, in collaboration with students. Expectations will be calibrated to a variety of factors, where depth of previous NLP experience will be just one of multiple factors, alongside considerations such as ambition of project goals, availability of existing tools and resources, and difficulty of acquiring or developing additional relevant tools and resources. 
+</details>

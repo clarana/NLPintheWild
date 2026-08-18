@@ -163,6 +163,15 @@ a:hover { color: var(--cmu-red-dark); text-decoration: underline; }
 .unit-chip.u4 { background: #8E5AA6; }
 .unit-chip:hover { filter: brightness(1.08); }
 
+/* Assignment type badges (lab / prj) in the schedule */
+.site-main .schedule .atag {
+  display: inline-block; padding: 0 .38em; border-radius: 3px;
+  font-size: .72em; font-weight: 700; letter-spacing: .02em;
+  text-transform: uppercase; vertical-align: baseline;
+}
+.site-main .schedule .atag-lab { background: #E4EDF6; color: #2B4B72; border: 1px solid #C3D6E8; }
+.site-main .schedule .atag-prj { background: #F1E8DB; color: #7A551A; border: 1px solid #E0CDAF; }
+
 /* ---------- Assignment summary cards (home page) ---------- */
 .assignment-summary {
   border: 1px solid var(--border);
@@ -203,24 +212,25 @@ pre code { background: none; padding: 0; }
 .site-footer .source-link a { color: var(--muted); }
 .site-footer .source-link a:hover { color: var(--cmu-red); }
 
-/* ---------- Expandable topic blocks ---------- */
-details.topic {
+/* ---------- Expandable topic + FAQ blocks ---------- */
+details.topic, details.faq {
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--bg-soft);
   margin: 0 0 .6rem;
   padding: 0 .9rem;
 }
-details.topic > summary {
+details.topic > summary, details.faq > summary {
   cursor: pointer;
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--ink);
   padding: .7rem 0;
 }
-details.topic > summary:hover { color: var(--cmu-red); }
-details.topic[open] { padding-bottom: .8rem; }
-details.topic[open] > summary { border-bottom: 1px solid var(--border); margin-bottom: .7rem; }
+details.faq > summary { font-size: .98rem; }
+details.topic > summary:hover, details.faq > summary:hover { color: var(--cmu-red); }
+details.topic[open], details.faq[open] { padding-bottom: .8rem; }
+details.topic[open] > summary, details.faq[open] > summary { border-bottom: 1px solid var(--border); margin-bottom: .7rem; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
