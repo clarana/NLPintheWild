@@ -35,6 +35,7 @@
   unit: 1
   date: 2026-08-25
   lecture: "Course overview, syllabus"
+  slides: "https://docs.google.com/presentation/d/1GK7c-QgJdC2SPJ5-GaOr4hV94uPy8feZ_wH2cUQJUwQ/edit?usp=sharing"
   activity:
     - "Introductions"
   assignments:
