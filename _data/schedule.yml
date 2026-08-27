@@ -23,7 +23,25 @@
 #                  - text: "Lab 1 released"
 #                    tag: lab      # renders a "lab" pill
 #                Use tag: lab for Lab items, tag: prj for course-project items.
-#   readings:    LIST of readings / resources; each on its own line. Markdown OK.
+#   readings:    NOT the usual way to add readings -- see below. This optional LIST
+#                still renders inline in the table (markdown OK), as a one-off for a
+#                single link that does not deserve its own page.
+#
+# READINGS ARE A SEPARATE PAGE PER CLASS MEETING. Do not list them here. Create
+# _readings/<class date>.md, named for the date, e.g. _readings/2026-08-27.md:
+#
+#   ---
+#   title: "Readings & resources: A brief history of NLP"
+#   class_date: "2026-08-27"   # MUST be quoted, and MUST match this row's `date`
+#   lecture_no: 2
+#   ---
+#
+#   ## Main reading
+#   - [Some paper](https://example.org)
+#
+# The table then shows a "Readings & resources" link to /readings/2026-08-27/ on the
+# matching row. Matching is on `class_date`, so quote it; an unquoted date becomes a
+# YAML date object and will not match.
 #   slides:      optional path, e.g. /assets/slides/2026-08-25-intro.pdf.
 #                When present, a "(slides)" link appears next to the lecture.
 #   no_class:    true renders the row's lecture in italics (breaks, holidays).
@@ -38,16 +56,17 @@
   slides: "https://docs.google.com/presentation/d/1GK7c-QgJdC2SPJ5-GaOr4hV94uPy8feZ_wH2cUQJUwQ/edit?usp=sharing"
   activity:
     - "Introductions"
-  assignments:
-    - "Info form (expertise, background, goals) due"
 - week: 1
   class_no: 2
   lecture_no: 2
   unit: 1
   date: 2026-08-27
   lecture: "A brief history of NLP"
+  slides: "https://docs.google.com/presentation/d/1TfkhFJTnUlSHQr82rpVpYHetNelynU6iunu3lDHbmAc/edit?slide=id.g3f875311b60_0_0#slide=id.g3f875311b60_0_0"
   activity:
     - "Exercise 1: Software setup + Python textercises"
+  assignments:
+    - "[Info form](https://bit.ly/11811-form) (expertise, background, goals) due **Fri 8/28**"
 
 # --- Week 2 · Unit 1 ---
 - week: 2
@@ -81,9 +100,6 @@
     - "Exercise 3: Text analysis"
   assignments:
     - "Reflection 1 due (pre-registered hypotheses)"
-  readings:
-    - "[semantle.com](https://semantle.com)"
-    - "[AI paint colors](https://www.aiweirdness.com/new-ai-paint-colors/)"
 - week: 3
   class_no: 6
   lecture_no: 6

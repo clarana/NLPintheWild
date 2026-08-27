@@ -13,7 +13,7 @@ external_links:
   - name: Canvas
     url: "#"
   - name: Piazza
-    url: "#"
+    url: "https://piazza.com/class/mshlvaz248d7f5/"
 
 # ---------------------------------------------------------------------------
 # Assignments collection — Lab 1–4 + the project. Each becomes a page under the
@@ -23,6 +23,12 @@ collections:
   labs:
     output: true
     permalink: "/labs/:name/"
+  # One readings page per class meeting. Name the file for the class date
+  # (_readings/2026-08-27.md) so it lands at /readings/2026-08-27/, and set
+  # `class_date` in its front matter so the schedule table can find it.
+  readings:
+    output: true
+    permalink: "/readings/:name/"
 
 defaults:
   - scope:
@@ -30,6 +36,11 @@ defaults:
       type: labs
     values:
       layout: lab
+  - scope:
+      path: ""
+      type: readings
+    values:
+      layout: reading
 
 # On the home page, an assignment's summary = everything ABOVE this marker in its
 # file; the full page = the whole file. Edit one file, both stay in sync.
