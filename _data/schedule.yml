@@ -39,11 +39,12 @@
 #   ## Main reading
 #   - [Some paper](https://example.org)
 #
-# The table then shows a "Readings & resources" link to /readings/2026-08-27/ on the
-# matching row. Matching is on `class_date`, so quote it; an unquoted date becomes a
-# YAML date object and will not match.
-#   slides:      optional path, e.g. /assets/slides/2026-08-25-intro.pdf.
-#                When present, a "(slides)" link appears next to the lecture.
+# The table then shows a "Day N readings" link to /readings/2026-08-27/ on the matching
+# row, where N is that row's `class_no`. Matching is on `class_date`, so quote it; an
+# unquoted date becomes a YAML date object and will not match.
+#   slides:      optional path or full URL, e.g. a Google Slides share link.
+#                When present, the LECTURE TITLE itself becomes the link to the
+#                slides. There is no separate "(slides)" link.
 #   no_class:    true renders the row's lecture in italics (breaks, holidays).
 
 # --- Week 1 · Unit 1 ---
@@ -64,7 +65,7 @@
   lecture: "A brief history of NLP"
   slides: "https://docs.google.com/presentation/d/1TfkhFJTnUlSHQr82rpVpYHetNelynU6iunu3lDHbmAc/edit?slide=id.g3f875311b60_0_0#slide=id.g3f875311b60_0_0"
   activity:
-    - "Exercise 1: Software setup + Python textercises"
+    - "[Exercise 1: Software setup + Python textercises](https://molab.marimo.io/notebooks/nb_XTxa4yDhs9GcrZfg6VQufe)"
   assignments:
     - "[Info form](https://bit.ly/11811-form) (expertise, background, goals) due **Fri 8/28**"
 

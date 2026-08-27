@@ -169,13 +169,13 @@ Dates are tentative and subject to change. In-class exercise materials, assignme
     <tr{% if row_class != "" %} class="{{ row_class | strip }}"{% endif %}>
       <td>{% if s.week and s.week != prev_week %}{{ s.week }}{% endif %}</td>
       <td>{% if s.date %}{{ s.date | date: "%a %b %-d" }}{% elsif s.date_label %}{{ s.date_label }}{% else %}TBD{% endif %}</td>
-      <td>{% if s.no_class %}<em>{{ s.lecture }}</em>{% else %}{% if s.lecture_no %}<span class="lec-no">L{{ s.lecture_no }}</span> {% endif %}{{ s.lecture }}{% if s.slides %} <a href="{{ s.slides | relative_url }}">(slides)</a>{% endif %}{% endif %}</td>
+      <td>{% if s.no_class %}<em>{{ s.lecture }}</em>{% else %}{% if s.lecture_no %}<span class="lec-no">L{{ s.lecture_no }}</span> {% endif %}{% if s.slides %}<a href="{{ s.slides | relative_url }}">{{ s.lecture }}</a>{% else %}{{ s.lecture }}{% endif %}{% endif %}</td>
       <td>{% for a in s.activity %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
       <td>{% for a in s.assignments %}{% if a.text %}{% if a.tag %}<span class="atag atag-{{ a.tag }}">{{ a.tag }}</span> {% endif %}{{ a.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% else %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
       {%- comment -%} Readings live on their own page per class meeting: _readings/<class date>.md, matched on class_date. An inline `readings:` list in schedule.yml still renders, as a one-off override. {%- endcomment -%}
       {%- assign rkey = s.date | date: "%Y-%m-%d" -%}
       {%- assign rdoc = site.readings | where: "class_date", rkey | first -%}
-      <td>{% if rdoc %}<a href="{{ rdoc.url | relative_url }}">Readings &amp; resources</a>{% endif %}{% if rdoc and s.readings %}<br>{% endif %}{% for a in s.readings %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
+      <td>{% if rdoc %}<a href="{{ rdoc.url | relative_url }}">{% if s.class_no %}Day {{ s.class_no }} readings{% else %}Readings &amp; resources{% endif %}</a>{% endif %}{% if rdoc and s.readings %}<br>{% endif %}{% for a in s.readings %}{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td>
     </tr>
     {% if s.week %}{% assign prev_week = s.week %}{% endif %}
   {% endfor %}
