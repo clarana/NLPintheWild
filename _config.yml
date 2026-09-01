@@ -11,7 +11,7 @@ repository: "clarana/NLPintheWild"
 # Right-aligned external links in the top nav. Replace "#" with the real URLs.
 external_links:
   - name: Canvas
-    url: "#"
+    url: "https://canvas.cmu.edu/courses/56179"
   - name: Piazza
     url: "https://piazza.com/class/mshlvaz248d7f5/"
 

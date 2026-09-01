@@ -23,7 +23,10 @@ _Coming soon._
 
 ## Tools & references
 
-_Coming soon._
+- Eisenstein, J. *[Natural Language Processing](https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf)*. November 13, 2018.
+- Schofield, X. "[tapi-text-data](https://github.com/xandaschofield/tapi-text-data/tree/main)." Text Analysis Pedagogy Institute 2022, Text Data Curation workshop.
+- Blei, D. "[Probabilistic Topic Models](https://www.cs.columbia.edu/~blei/papers/Blei2012.pdf)." *Communications of the ACM* 55(4):77-84, 2012.
+- Blei, D. "[Probabilistic Topic Models](https://yosinski.com/mlss12/media/slides/MLSS-2012-Blei-Probabilistic-Topic-Models.pdf)." MLSS 2012 slides.
 
 ## Datasets
 

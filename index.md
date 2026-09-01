@@ -67,7 +67,7 @@ A detailed syllabus is forthcoming. Please feel free to reach out to the instruc
 |---|---|
 | **Lecture** | Tuesdays & Thursdays, 12:30–1:50pm, Wean Hall 6403 |
 | **Office Hours** | TBD |
-| **Canvas** | TBD |
+| **Canvas** | [canvas.cmu.edu/courses/56179](https://canvas.cmu.edu/courses/56179) |
 | **Piazza** | [piazza.com/class/mshlvaz248d7f5](https://piazza.com/class/mshlvaz248d7f5/) |
 | **Contact** | Please use Piazza for questions. For private matters, make a private post on Piazza and/or email the instructors. |
 
