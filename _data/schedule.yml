@@ -33,6 +33,7 @@
 #   ---
 #   title: "Readings & resources: A brief history of NLP"
 #   class_date: "2026-08-27"   # MUST be quoted, and MUST match this row's `date`
+#   class_no: 2                # MUST match this row's `class_no`
 #   lecture_no: 2
 #   ---
 #
@@ -76,6 +77,7 @@
   unit: 1
   date: 2026-09-01
   lecture: "Representing and encoding text"
+  slides: "https://docs.google.com/presentation/d/1Hx-19an6Z_a7V5lRyMcLbIgDSsQrDSrW273y9aJzses/edit?usp=sharing"
   activity:
     - "Exercise 2: Topic modeling"
   assignments:
