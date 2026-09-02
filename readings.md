@@ -14,7 +14,7 @@ Readings and resources will be posted here as the semester progresses.
 {% if by_class.size > 0 %}
 <ul>
 {%- for r in by_class %}
-  <li><strong>{% if r.class_no %}Day {{ r.class_no }}{% else %}{{ r.class_date | date: "%b %-d" }}{% endif %}</strong> &middot; {{ r.class_date | date: "%b %-d" }} &middot; <a href="{{ r.url | relative_url }}">{{ r.title | remove: "Readings & resources: " }}</a></li>
+  <li><strong>{% if r.class_no %}Day {{ r.class_no }}{% else %}{{ r.class_date | date: "%b %-d" }}{% endif %}</strong> ({{ r.class_date | date: "%b %-d" }}): <a href="{{ r.url | relative_url }}">{{ r.title | remove: "Readings & resources: " }}</a></li>
 {%- endfor %}
 </ul>
 {% else %}

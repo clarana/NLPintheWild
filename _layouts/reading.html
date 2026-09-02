@@ -5,7 +5,8 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <p class="lab-meta">
-  {% if page.lecture_no %}<strong>L{{ page.lecture_no }}</strong> &middot; {% endif %}{% if page.class_date %}{{ page.class_date | date: "%B %-d, %Y" }}{% else %}Date TBD{% endif %} &middot; <a href="{{ '/#schedule' | relative_url }}">back to schedule</a>
+  {% if page.lecture_no %}<strong>L{{ page.lecture_no }}</strong> {% endif %}({% if page.class_date %}{{ page.class_date | date: "%B %-d, %Y" }}{% else %}Date TBD{% endif %})<br>
+  <a href="{{ '/#schedule' | relative_url }}">back to schedule</a>
 </p>
 
 {{ content }}
