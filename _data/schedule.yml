@@ -15,6 +15,11 @@
 #   date:        ISO YYYY-MM-DD. The home page formats it for display.
 #   date_label:  free text, used INSTEAD of `date` when there is no fixed date.
 #   lecture:     lecture topic (blank on activity-only days).
+#   speaker:     optional guest lecturer, as `name` and optional `url`:
+#                  speaker:
+#                    name: "Yonatan Bisk"
+#                    url: "https://example.org"
+#                Renders after the lecture title, name linked to url.
 #   activity:    LIST of in-class activity items; each renders on its own line.
 #                Markdown is allowed, so you can add links later.
 #   assignments: LIST of release/due items; each on its own line. Markdown OK.
@@ -89,6 +94,9 @@
   unit: 1
   date: 2026-09-03
   lecture: "Guest lecture: What is meaning?"
+  speaker:
+    name: "Yonatan Bisk"
+    url: "https://talkingtorobots.com/yonatanbisk.html"
   activity:
     - "Reflection assignment introduced"
 
@@ -201,6 +209,9 @@
   unit: 3
   date: 2026-10-08
   lecture: "Guest lecture: Annotation"
+  speaker:
+    name: "Nupoor Gandhi"
+    url: "https://nupoorgandhi.github.io/"
   activity:
     - "Project workshop"
   assignments:
