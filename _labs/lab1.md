@@ -5,37 +5,40 @@ points: 9
 due: 2026-09-17   # Part 1 due 2026-09-11 (Friday); Part 2 (final) due 2026-09-17
 ---
 
-Lab 1 is an individual assignment in two parts. In Part 1 you set up a local `uv` environment, load and explore the 20 Newsgroups corpus, and train and tune topic models on it. The starter notebook is a marimo notebook with nine numbered questions, interleaved with demonstrations and scaffolding code.
+**Part 1 is due Friday, September 11 at 11:59pm ET.**
 
-**Part 1 is due Friday, September 11 at 11:59pm ET.** Friday, not Thursday.
+In Part 1 you will set up a local `uv` environment, load and explore the [20 Newsgroups corpus](http://qwone.com/~jason/20Newsgroups/), and train and tune topic models on it. Nine questions, with demonstrations and scaffolding in between.
 <!--more-->
 
-## Deliverables for Part 1
+## Starter notebook
 
-Submit two files. Rename both with your Andrew ID:
+[`lab1_pt1.py`]({{ '/assets/labs/lab1_pt1.py' | relative_url }})
 
-- `lab1_pt1_andrewid.py`, the marimo notebook filled out with your answers.
-- `model_history_andrewid.csv`, the record of the models you trained. The notebook appends every run to `model_history.csv` next to itself as soon as it finishes training.
+## Required Deliverables
 
-Duplicate rows in `model_history.csv` are fine. This happens if you complete the assignment across several sittings. We will use these tables in an in-class activity after the assignment is due.
+You will submit `lab1_pt1_yourandrewid.py` and `model_history_yourandrewid.csv`
 
-## Running the notebook
+The notebook appends every run to `model_history.csv` next to itself as soon as it finishes training. Please simply rename the file and submit it along with the notebook
 
-Use `uv run marimo edit` for the browser interface (Clara does this), OR the marimo extension on VSCode (Sireesh does this). You may find VSCode more comfortable if you are used to running Jupyter notebooks there too, but we also encourage trying new interfaces in the same spirit of trying new tools and embracing being out of your depth :)
+## Recommended for running
 
-Please start early (some questions will be more time consuming than others!) and share any questions or issues that come up-- we did try to set this up to go relatively smoothly for everyone, but it would not be so surprising if there were some unresolved ambiguities. Don't assume it is just a you problem :)
+`uv run marimo edit` for the browser interface (Clara does this), OR the marimo extension on VSCode (Sireesh does this)
 
-## Assistance you may use
+## Allowed and recommended resources
 
-- Help from course staff.
-- The scaffolding provided in the starter notebook.
-- Official documentation, such as `help(LDAModel)` and the [tomotopy documentation](https://bab2min.github.io/tomotopy/v0.14.0/en/).
-- Piazza Q&A, both your own questions and other people's.
-- Other course materials, for example released in-class activities.
-- The internet, for general resources to understand the subject material.
-- Speech-to-text, to help you transcribe your answers.
+- assistance from course staff
+- provided scaffolding in starter notebook
+- official documentation such as through `help(LDAModel)` and [the official page](https://bab2min.github.io/tomotopy/v0.14.0/en/)
+- piazza Q&A (your own questions and/or others')
+- other course materials (e.g. released in-class activities)
+- internet for general resources to understand subject material
+- speech-to-text to help transcribe answers
 
-## Assistance you may not use
+## Prohibited
 
-- AI generated answers.
-- Copying a friend's notebook.
+- AI generated answers
+- copying a friend's notebook
+
+## Explicitly *not* required
+- polished prose (complete sentences, grammar): for this assignment, we will evaluate written answers for thoughtful responses, which should be expressed clearly and precisely enough to be legible to your peers and instructors, but need not be in complete sentences of Standard English for full credit. e.g. if you would sometimes tend to use a dedicated grammar checker (or LLM) on your writing before submission, we would happily accept, and would actually prefer, the more "raw" version
+- a perfect `model_history.csv`: Duplicate entries are perfectly alright (e.g. from completing the homework across multiple sittings and rerunning some cells). Even a couple missing entries should be okay. If you end up with a couple missing rows, it would be helpful to us if you could roughly describe what is missing, but no worries if not. If you end up with multiple `model_history.csv` files, please concatenate the rows to just one file for submission. We will use these csvs in an in-class activity after Assignment 1 is due
