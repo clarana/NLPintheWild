@@ -5,7 +5,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <p class="lab-meta">
-  <strong>Due:</strong> {% if page.due %}{{ page.due | date: "%B %-d, %Y" }}{% else %}TBD{% endif %}{% if page.points %} &middot; <strong>{{ page.points }} points</strong>{% endif %}
+  <strong>Due:</strong> {% if page.due %}{{ page.due | date: "%B %-d, %Y" }}{% else %}TBD{% endif %}{% if page.points %} ({{ page.points }} points){% endif %}
 </p>
 
 {{ content }}

@@ -6,7 +6,7 @@ nav_order: 1
 
 # Interdisciplinary NLP: Language Modeling in the Wild
 
-**Fall 2026** &nbsp;·&nbsp; Tuesdays & Thursdays, 12:30–1:50pm &nbsp;·&nbsp; Wean Hall 6403
+**Fall 2026** Tuesdays & Thursdays, 12:30-1:50pm in Wean Hall 6403
 
 **Instructors:** [Emma Strubell](https://strubell.github.io), [Clara Na](https://clarasna.com/), and [Sireesh Gururaja](https://siree.sh/)
 
@@ -65,10 +65,10 @@ A detailed syllabus is forthcoming. Please feel free to reach out to the instruc
 
 | | |
 |---|---|
-| **Lecture** | Tuesdays & Thursdays, 12:30–1:50pm, Wean Hall 6403 |
-| **Office Hours** | TBD |
-| **Canvas** | [canvas.cmu.edu/courses/56179](https://canvas.cmu.edu/courses/56179) |
-| **Piazza** | [piazza.com/class/mshlvaz248d7f5](https://piazza.com/class/mshlvaz248d7f5/) |
+| **Lecture** | Tuesdays & Thursdays, 12:30-1:50pm, Wean Hall 6403 |
+| **Office Hours** | See Piazza |
+| **Canvas** | [Canvas course page](https://canvas.cmu.edu/courses/56179) |
+| **Piazza** | [Piazza course page](https://piazza.com/class/mshlvaz248d7f5/) |
 | **Contact** | Please use Piazza for questions. For private matters, make a private post on Piazza and/or email the instructors. |
 
 ## Topics
@@ -141,10 +141,10 @@ Dates are tentative and subject to change. In-class exercise materials, assignme
 
 <!-- The color rail on the left marks which course Part each class belongs to: -->
 <div class="unit-legend" markdown="0">
-  <a class="unit-chip u1" href="#part-1-text-as-data-and-language-technologies">Part 1 · Text as data</a>
-  <a class="unit-chip u2" href="#part-2-navigating-tools-and-affordances">Part 2 · Tools and affordances</a>
-  <a class="unit-chip u3" href="#part-3-data-curation-and-evaluation">Part 3 · Data curation and evaluation</a>
-  <a class="unit-chip u4" href="#part-4-adapting-models-to-domains">Part 4 · Adapting models</a>
+  <a class="unit-chip u1" href="#part-1-text-as-data-and-language-technologies">Part 1: Text as data</a>
+  <a class="unit-chip u2" href="#part-2-navigating-tools-and-affordances">Part 2: Tools and affordances</a>
+  <a class="unit-chip u3" href="#part-3-data-curation-and-evaluation">Part 3: Data curation and evaluation</a>
+  <a class="unit-chip u4" href="#part-4-adapting-models-to-domains">Part 4: Adapting models</a>
 </div>
 
 <div class="table-scroll" markdown="0">
