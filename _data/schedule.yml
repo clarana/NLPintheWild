@@ -107,6 +107,7 @@
   unit: 1
   date: 2026-09-08
   lecture: "Representing and modeling meaning"
+  slides: "https://docs.google.com/presentation/d/1hotHI5KNzNm1eSoArEE_NOWGqzA7w1juxLdbxsQrXds/edit?slide=id.p#slide=id.p"
   activity:
     - "Exercise 3: Text analysis"
   assignments:
