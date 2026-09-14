@@ -121,7 +121,6 @@
   slides: "https://docs.google.com/presentation/d/1V4Qn8nuqJT9kvwWlMKxR0DB1Ph13XoiDgr6WlDk_64U/edit?usp=sharing"
   activity:
     - "Exercise 4: Open-ended corpus exploration"
-    - "Project group formation"
   assignments:
     - text: "Lab 1 Part 1 due **Fri 9/11**"
       tag: lab
@@ -135,6 +134,7 @@
   lecture: "Pre- and post-processing"
   activity:
     - "Exercise 5: Corpus collection"
+    - "Project group formation"
 - week: 4
   class_no: 8
   lecture_no: 8
