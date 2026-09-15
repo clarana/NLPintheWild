@@ -132,6 +132,7 @@
   unit: 2
   date: 2026-09-15
   lecture: "Pre- and post-processing"
+  slides: "https://docs.google.com/presentation/d/1IIBLUDHj4bnFiDfnVjOSRpd3cOGpUxqfS4oy_EsvkXw/edit?slide=id.p#slide=id.p"
   activity:
     - "Exercise 5: Corpus collection"
     - "Project group formation"
