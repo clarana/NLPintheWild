@@ -18,7 +18,7 @@ You will give a talk (7 min) that introduces yourself, your work, and your field
 | Length | 10 minutes total: 7min presentation + 3min questions, *strictly enforced* |
 | Presentation days | Thursday, September 24 and Tuesday, September 29 |
 | Presentation slots | Will be posted Thursday, September 17 [***HERE***](https://docs.google.com/spreadsheets/d/1B7PX__mARE9nYdqL7KPBxZ0_XyaVevzPeeXSiIpiIuU/edit?gid=0#gid=0) |
-| Slides | Upload (Google) slides [here](https://drive.google.com/drive/folders/1Nbv5Karz_yHWUE1aZCxKNlpHdPmFq3oC?usp=sharing), due by the start of class on the day of your presentation |
+| Slides | Upload (Google) slides [here](https://drive.google.com/drive/folders/1Nbv5Karz_yHWUE1aZCxKNlpHdPmFq3oC?usp=sharing), due by the start of class on the first day of presentations (Thursday, September 24), regardless of which day you present |
 
 ## Your talk will:
 
@@ -72,4 +72,4 @@ Assume your audience does not know how long a project typically takes or costs, 
 - Organize your slides in any way that works for you and helps presentation clarity and coherence. For example, you might talk about yourself and your interests first and then your field more generally, or you might instead interleave your own expertise and interests with comments about your field as you go. Either works just fine!
 - If you have the chance, practice describing your work with your project group, or with anyone outside your field, and gather initial feedback before you present. This can be informal! e.g. a quick "is this true in your field too??"
 - Define or drop field-specific jargon!
-- Please pay attention to timing! You will be graded based on the presentation that you are able to give in the allotted time, and on the presentation that has been uploaded by the deadline (start of class).
+- Please pay attention to timing! You will be graded based on the presentation that you are able to give in the allotted time, and on the presentation that has been uploaded by the deadline (start of class on the 24th).
