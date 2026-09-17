@@ -71,7 +71,7 @@
   lecture: "A brief history of NLP"
   slides: "https://docs.google.com/presentation/d/1TfkhFJTnUlSHQr82rpVpYHetNelynU6iunu3lDHbmAc/edit?slide=id.g3f875311b60_0_0#slide=id.g3f875311b60_0_0"
   activity:
-    - "[Exercise 1: Software setup + Python textercises](https://molab.marimo.io/notebooks/nb_XTxa4yDhs9GcrZfg6VQufe)"
+    - "[Exercise 2: Software setup + Python textercises](https://molab.marimo.io/notebooks/nb_XTxa4yDhs9GcrZfg6VQufe)"
   assignments:
     - "[Info form](https://bit.ly/11811-form) (expertise, background, goals) due **Fri 8/28**"
 
@@ -83,8 +83,6 @@
   date: 2026-09-01
   lecture: "Representing and encoding text"
   slides: "https://docs.google.com/presentation/d/1Hx-19an6Z_a7V5lRyMcLbIgDSsQrDSrW273y9aJzses/edit?usp=sharing"
-  activity:
-    - "Exercise 2: Topic modeling"
   assignments:
     - text: "Lab 1 released"
       tag: lab
@@ -108,8 +106,6 @@
   date: 2026-09-08
   lecture: "Representing and modeling meaning"
   slides: "https://docs.google.com/presentation/d/1hotHI5KNzNm1eSoArEE_NOWGqzA7w1juxLdbxsQrXds/edit?slide=id.p#slide=id.p"
-  activity:
-    - "Exercise 3: Text analysis"
   assignments:
     - "Reflection 1 due (pre-registered hypotheses)"
 - week: 3
@@ -120,7 +116,7 @@
   lecture: "Families of problems"
   slides: "https://docs.google.com/presentation/d/1V4Qn8nuqJT9kvwWlMKxR0DB1Ph13XoiDgr6WlDk_64U/edit?usp=sharing"
   activity:
-    - "Exercise 4: Open-ended corpus exploration"
+    - "Exercise 6: Open-ended corpus exploration"
   assignments:
     - text: "Lab 1 Part 1 due **Fri 9/11**"
       tag: lab
@@ -134,7 +130,6 @@
   lecture: "Pre- and post-processing"
   slides: "https://docs.google.com/presentation/d/1IIBLUDHj4bnFiDfnVjOSRpd3cOGpUxqfS4oy_EsvkXw/edit?slide=id.p#slide=id.p"
   activity:
-    - "Exercise 5: Corpus collection"
     - "Project group formation"
 - week: 4
   class_no: 8
@@ -144,14 +139,13 @@
   lecture: "The Internet"
   slides: "https://docs.google.com/presentation/d/1gUwpGe4JiI36UqiI1DHhhPq_XO49f8RYkhVooXSxaJg/edit?usp=sharing"
   activity:
-    - "Exercise 6: Web scraping and APIs"
     - "[Intro presentation](/intro-presentations/) prep begins"
   assignments:
     - text: "Lab 1 Part 2 due **Fri 9/18**"
       tag: lab
     - text: "Lab 2 released"
       tag: lab
-    - "Presentation sign-ups open"
+    - "Presentation schedule out"
 
 # --- Week 5 · Unit 2 ---
 - week: 5
@@ -161,8 +155,10 @@
   date: 2026-09-22
   lecture: "Storing and navigating data"
   activity:
-    - "Exercise 7: Scavenger hunt"
     - "Post-Lab 1 activity"
+  assignments:
+    - text: "[Project group registration form](https://forms.gle/K2jsry7yNiMEbt23A) due"
+      tag: prj
 - week: 5
   class_no: 10
   unit: 2
@@ -192,7 +188,7 @@
   date: 2026-10-01
   lecture: "Choosing tools"
   activity:
-    - "Exercise 8: LLM inference"
+    - "Exercise 10: LLM inference"
   assignments:
     - text: "Lab 2 due"
       tag: lab
@@ -241,7 +237,7 @@
   date: 2026-10-20
   lecture: "Evaluation of evaluation"
   activity:
-    - "Exercise 9: Annotation and agreement"
+    - "Exercise 13: Annotation and agreement"
 - week: 9
   class_no: 16
   unit: 3
@@ -260,7 +256,7 @@
   date: 2026-10-27
   lecture: "Qualitative analysis"
   activity:
-    - "Exercise 10: Developing a codebook"
+    - "Exercise 14: Developing a codebook"
 - week: 10
   class_no: 18
   lecture_no: 15
@@ -300,7 +296,7 @@
   date: 2026-11-10
   lecture: "Leveraging existing models and data"
   activity:
-    - "Exercise 11: ICL vs. RAG vs. fine-tuning"
+    - "Exercise 16: ICL vs. RAG vs. fine-tuning"
   assignments:
     - "Reflection 5 due (post-Lab 3 activity)"
 - week: 12
@@ -330,7 +326,7 @@
   date: 2026-11-19
   lecture: "Synthetic data"
   activity:
-    - "Exercise 12: Training on synthetic data"
+    - "Exercise 18: Training on synthetic data"
   assignments:
     - text: "Lab 4 due"
       tag: lab
