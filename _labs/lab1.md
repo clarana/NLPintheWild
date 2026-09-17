@@ -2,23 +2,31 @@
 title: "Lab 1"
 nav_order: 1
 points: 9
-due: 2026-09-17   # Part 1 due 2026-09-11 (Friday); Part 2 (final) due 2026-09-17
+due: 2026-09-18   # Part 1 due 2026-09-11 (Friday); Part 2 (final) due 2026-09-18 (Friday)
 ---
 
 **Part 1 is due Friday, September 11 at 11:59pm ET.**
 
-In Part 1 you will set up a local `uv` environment, load and explore the [20 Newsgroups corpus](http://qwone.com/~jason/20Newsgroups/), and train and tune topic models on it. Nine questions, with demonstrations and scaffolding in between.
+In Part 1 you will set up a local `uv` environment, load and explore the [20 Newsgroups corpus](http://qwone.com/~jason/20Newsgroups/), and train and tune topic models on it.
+
+**Part 2 is due Friday, September 18 at 11:59pm ET.**
+
+In Part 2 you will download and parse the [Folger Shakespeare](https://www.folger.edu) corpus from its TEI XML source, vary what counts as a document (play, scene, speech, character), and compare the resulting topic models against 20 Newsgroups.
 <!--more-->
 
-## Starter notebook
+## Starter notebooks
 
-[`lab1_pt1.py`]({{ '/assets/labs/lab1_pt1.py' | relative_url }})
+Part 1: [`lab1_pt1.py`]({{ '/assets/labs/lab1_pt1.py' | relative_url }})
+
+Part 2: [`lab1_pt2.py`]({{ '/assets/labs/lab1_pt2.py' | relative_url }})
 
 ## Required Deliverables
 
-You will submit `lab1_pt1_yourandrewid.py` and `model_history_yourandrewid.csv`
+For Part 1, you will submit `lab1_pt1_yourandrewid.py` and `model_history_yourandrewid.csv`
 
-The notebook appends every run to `model_history.csv` next to itself as soon as it finishes training. Please simply rename the file and submit it along with the notebook
+For Part 2, you will submit `lab1_pt2_yourandrewid.py` and `model_history_part2_yourandrewid.csv`
+
+The notebook appends every run to `model_history.csv` (Part 1) or `model_history_part2.csv` (Part 2) next to itself as soon as it finishes training. Please simply rename the file and submit it along with the notebook
 
 ## Recommended for running
 
