@@ -142,11 +142,12 @@
   unit: 2
   date: 2026-09-17
   lecture: "The Internet"
+  slides: "https://docs.google.com/presentation/d/1gUwpGe4JiI36UqiI1DHhhPq_XO49f8RYkhVooXSxaJg/edit?usp=sharing"
   activity:
     - "Exercise 6: Web scraping and APIs"
     - "Intro presentation prep begins"
   assignments:
-    - text: "Lab 1 Part 2 due"
+    - text: "Lab 1 Part 2 due **Fri 9/18**"
       tag: lab
     - text: "Lab 2 released"
       tag: lab
