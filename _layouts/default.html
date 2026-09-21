@@ -3,7 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
+  {%- comment -%}
+    We write <title> ourselves (title=false turns off jekyll-seo-tag's own) so
+    that every page title carries "11811", the unhyphenated spelling people type
+    into a search box. jekyll-seo-tag builds the rest of the head.
+  {%- endcomment -%}
+  <title>{% if page.title and page.url != '/' %}{{ page.title }} | {% endif %}{{ site.course_number_alt }}: Interdisciplinary NLP</title>
+  {% seo title=false %}
+  {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Course",
+   "name":"{{ site.course_number }} ({{ site.course_number_alt }}): Interdisciplinary NLP - Language Modeling in the Wild",
+   "alternateName":["{{ site.course_number_alt }}","{{ site.course_number }}","CMU {{ site.course_number_alt }}"],
+   "courseCode":"{{ site.course_number }}",
+   "description":"{{ site.description }}",
+   "url":"{{ site.url }}{{ site.baseurl }}/",
+   "provider":{"@type":"CollegeOrUniversity","name":"Carnegie Mellon University","department":{"@type":"Organization","name":"Language Technologies Institute"},"url":"https://www.cmu.edu"}}
+  </script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
@@ -11,7 +27,8 @@
     <div class="container">
       {% if site.institution %}<p class="eyebrow">{{ site.institution }}</p>{% endif %}
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      {% if site.description %}<p class="tagline">{{ site.description }}</p>{% endif %}
+      {%- assign header_tagline = site.tagline | default: site.description -%}
+      {% if header_tagline %}<p class="tagline">{{ header_tagline }}</p>{% endif %}
     </div>
   </header>
 
@@ -31,7 +48,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>{{ site.title }} | {{ site.institution }}</p>
+      {%- comment -%} Footer spells the course number "11811" so the unhyphenated form appears in page text, not only in the head. {%- endcomment -%}
+      <p>{{ site.title | replace: site.course_number, site.course_number_alt }} | {{ site.institution }}</p>
       {% if site.repository and page.path %}<p class="source-link"><a href="https://github.com/{{ site.repository }}/blob/main/{{ page.path }}">View this page's source on GitHub</a></p>{% endif %}
     </div>
   </footer>

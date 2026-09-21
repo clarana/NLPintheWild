@@ -1,5 +1,16 @@
 title: "11-811: Interdisciplinary NLP"
-description: "Language Modeling in the Wild &#124; Fall 2026"   # &#124; is a pipe; a literal | here gets eaten by jekyll-seo-tag (kramdown reads it as a table)
+
+# `tagline` is the line under the title in the site header. `description` is the
+# SEO/social one (meta description, og:description) and never appears on screen,
+# so it can spell the course number both ways for search.
+tagline: "Language Modeling in the Wild &#124; Fall 2026"   # &#124; is a pipe; a literal | here gets eaten by jekyll-seo-tag (kramdown reads it as a table)
+description: "CMU 11-811 (11811), Interdisciplinary NLP: Language Modeling in the Wild. Carnegie Mellon University, Language Technologies Institute, Fall 2026."
+
+# Course number in both spellings. People search the unhyphenated "11811", so it
+# has to appear literally in the title, the metadata, and the page text.
+course_number: "11-811"
+course_number_alt: "11811"
+keywords: "11811, 11-811, CMU 11811, CMU 11-811, 11811 CMU, Interdisciplinary NLP, Language Modeling in the Wild, LTI, Carnegie Mellon, NLP course, Fall 2026"
 url: "https://nlpinthewild.clarasna.com"
 baseurl: ""
 
