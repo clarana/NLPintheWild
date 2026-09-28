@@ -180,9 +180,6 @@
   lecture: ""
   activity:
     - "[Intro presentations](/intro-presentations/) II"
-  assignments:
-    - text: "Project proposal due"
-      tag: prj
 - week: 6
   class_no: 12
   lecture_no: 10
@@ -219,6 +216,8 @@
     - "Project workshop"
   assignments:
     - "Reflection 3 due (post-Lab 2 activity)"
+    - text: "Project proposal due **Fri 10/9**"
+      tag: prj
 
 # --- Week 8: Fall Break · Unit 3 ---
 - week: 8
