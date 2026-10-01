@@ -4,6 +4,8 @@ title: "Project Proposals"
 permalink: /project-proposals/
 ---
 
+# Project Proposals
+
 Together with your group, you will put together a written proposal of the work you will do for your course project. In doing so, you will refine your own problem formulation and plan, and produce a document that the course staff can reference to provide concrete feedback and advice to guide your project
 
 
@@ -19,10 +21,9 @@ Together with your group, you will put together a written proposal of the work y
 | Submission | Canvas -- only submit one per group!! |
 
 
-# Project Proposals
 
+## Things to include:
 
-Things to include:
 - Overall goal, motivation, and type of contribution
   - Some proposals may be shaped to investigate a set of hypotheses
   - Other proposals may be centered around building an artifact such as a corpus
@@ -30,12 +31,12 @@ Things to include:
 - Explanation of how you will evaluate success 
   - In a later assignment, you will propose detailed rubrics for your project. However, you should do some initial thinking for your project proposal, and you should be able to describe what a successfully executed project would look like and how you will know that it has been successfully executed
 - Descriptions of anticipated contributions of each group member
-  - additonally, descriptions of things that each member is expecting to learn on the job, whether they are skills or conceptual understanding or both
+  - additionally, descriptions of things that each member is expecting to learn on the job, whether they are skills or conceptual understanding or both
 - A tentative plan to execute your proposed work! Things to mention here include, as applicable:
   - a dataset acquisition plan, 
   - tools such as datasets and models that you plan to use off-the-shelf, 
   - evaluation methodology, 
-  - any parameteric or nonparameteric adaptation of models you plan to do, 
+  - any parameteric or non-parametric adaptation of models you plan to do, 
   - rationales behind picking some of these tools and methods over others,
   - experiments you plan to run, 
   - analyses you plan to conduct,
@@ -52,8 +53,8 @@ Things to include:
 - **Out of scope:** Too much hand wringing over exact methodology and execution plan etc.-- this is what we will provide feedback on!! 
 
 
-Tips: 
+## Tips: 
 - The more concrete your proposal is, the more helpful we can be! For useful feedback, it is less important to pick "correct" approaches than to describe clearly what you would like to accomplish with your project and what kind of work this would require.
 - Though we are not imposing a strict official word count requirement, we expect that most good proposals will have at least roughly 1000 words and no more than 2000 words
-- We will be grading on completeness and thought behind content– it’s ok to propose something that ends up being the "wrong" methodology or approach! 
+- We will be grading on completeness and thought behind content– it is ok to propose something that ends up being the "wrong" methodology or approach! 
   - You should be able to justify each piece of your proposal (even if a justification is relatively simple e.g. "one of our group members has used this technique before and it was useful for XYZ"), but you do not need to exhaustively consider all alternatives.
