@@ -201,7 +201,7 @@ Grades are based on a combination of individual and group work.
 
 **Labs (36 points).** (4 assignments; 9 points each. First lab is individual, the rest are group.) Labs are implementation- and analysis-heavy assignments (mostly Python/PyTorch) designed to give hands-on experience implementing the methodologies discussed in class. After the first lab, labs will be group assignments to be completed with project teams using the codebase being developed for your course project. All labs will have "tracks" or components for NLP students and non-NLP students.
 
-**Project (36 points).** (Group.) A semester-long 2-4 person team project focused on carrying out a research goal within a particular domain of interest to people in a non-NLP discipline. There will be intermediate assignments and exercises (project proposal, project sharing, writing abstracts for each other's publication audiences) as well as a final presentation and report. More details below and in class.
+**Project (36 points).** (Group.) A semester-long 2-4 person team project focused on carrying out a research goal within a particular domain of interest to people in a non-NLP discipline. There will be intermediate assignments and exercises ([project proposal]({{ '/project-proposals/' | relative_url }}), project sharing, writing abstracts for each other's publication audiences) as well as a final presentation and report. More details below and in class.
 
 ### Labs and project
 {% assign labs = site.labs | sort: "nav_order" %}

@@ -17,7 +17,7 @@ You will form a group of 2-4 students, with at least one student from each of Gr
 
 ## Milestones
 
-- Proposal
+- [Proposal]({{ '/project-proposals/' | relative_url }})
 - Midway check-ins
 - Cross-disciplinary abstract writing exercise
 - Final presentation
