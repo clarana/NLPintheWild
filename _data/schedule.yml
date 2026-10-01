@@ -185,9 +185,8 @@
   lecture_no: 10
   unit: 2
   date: 2026-10-01
-  lecture: "Choosing tools"
-  activity:
-    - "Exercise 10: LLM inference"
+  lecture: "Metrics"
+  slides: "https://docs.google.com/presentation/d/1nadONM122V-Ckrzi-lowUfU8df2HR6Hf6giVpn3p5XY/edit?usp=sharing"
   assignments:
     - text: "Lab 2 due **Fri 10/2**"
       tag: lab
@@ -200,7 +199,7 @@
   lecture_no: 11
   unit: 3
   date: 2026-10-06
-  lecture: "Evaluation"
+  lecture: "Choosing tools"
   activity:
     - "Post-Lab 2 activity"
 - week: 7
