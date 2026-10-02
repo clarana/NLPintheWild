@@ -1,0 +1,12 @@
+{
+  "source_url": "https://en.wikipedia.org/wiki/List_of_multiple_Olympic_gold_medalists",
+  "api": "https://en.wikipedia.org/w/api.php",
+  "retrieved_utc": "2026-09-21T06:10:42Z",
+  "n_link_rows": 506,
+  "n_unique_titles": 362,
+  "n_people": 362,
+  "not_people": [],
+  "tables": "3 wikitables; athletes taken as the UNION across all of them",
+  "person_test": "article has a category matching r'\\b\\d{4} births\\b'",
+  "license": "Wikipedia text is CC BY-SA 4.0. Attribute and share alike."
+}
