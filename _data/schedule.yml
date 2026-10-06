@@ -200,8 +200,9 @@
   unit: 3
   date: 2026-10-06
   lecture: "Choosing tools"
+  slides: "https://docs.google.com/presentation/d/1o6uaA01YGARBjOkqUCwJVC_3j8NgujkpfVPdn6wokFM/edit?usp=sharing"
   activity:
-    - "Post-Lab 2 activity"
+    - "[Post-Lab 2 activity](/post-lab2-activity/)"
 - week: 7
   class_no: 14
   lecture_no: 12
