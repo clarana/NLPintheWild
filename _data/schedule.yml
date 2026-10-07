@@ -215,7 +215,7 @@
   activity:
     - "Project workshop"
   assignments:
-    - "Reflection 3 due (post-Lab 2 activity)"
+    - "Reflection 3 due **Fri 10/9** ([post-Lab 2 activity](/post-lab2-activity/))"
     - text: "[Project proposal](/project-proposals/) due **Fri 10/9**"
       tag: prj
 
