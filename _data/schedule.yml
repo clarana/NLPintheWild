@@ -209,6 +209,7 @@
   unit: 3
   date: 2026-10-08
   lecture: "Guest lecture: Annotation"
+  slides: "/assets/slides/2026-10-08-annotation.pdf"
   speaker:
     name: "Nupoor Gandhi"
     url: "https://nupoorgandhi.github.io/"
