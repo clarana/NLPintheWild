@@ -268,7 +268,7 @@
   activity:
     - "Propose your own project rubric"
   assignments:
-    - text: "Lab 3 due"
+    - text: "Lab 3 due **Fri 10/30**"
       tag: lab
     - text: "Lab 4 released"
       tag: lab
