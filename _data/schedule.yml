@@ -238,6 +238,7 @@
   unit: 3
   date: 2026-10-20
   lecture: "Evaluation of evaluation"
+  slides: "https://docs.google.com/presentation/d/1VtOrT3EoJLaXeH7pakPdtPKmfFkSfpYPqbC4KoarqqU/edit?usp=sharing"
   activity:
     - "Exercise 13: Annotation and agreement"
 - week: 9
