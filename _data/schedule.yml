@@ -240,7 +240,7 @@
   lecture: "Evaluation of evaluation"
   slides: "https://docs.google.com/presentation/d/1VtOrT3EoJLaXeH7pakPdtPKmfFkSfpYPqbC4KoarqqU/edit?usp=sharing"
   activity:
-    - "Exercise 13: Annotation and agreement"
+    - "[Exercise 13: Annotation and agreement](/exercise-13/)"
 - week: 9
   class_no: 16
   unit: 3
