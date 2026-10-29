@@ -11,7 +11,7 @@ Together with your group, you will design rubrics for your course projects and e
 For today's assignment, you will receive credit for making a good faith attempt at writing clear rubric criteria and eventually arriving at a rubric that you, your group members, and the instructors are happy with. You will not be penalized for being asked to iterate on an initial rubric. For each criterion, you will provide descriptions of what success looks like (for full credit), and optionally, what meeting "stretch" goals would look like (for full credit + up to 2 bonus points total), but you will only need to write a general statement of what could lead to falling short of goals, and how you plan to avoid these potential pitfalls. You will specify both group criteria and a small subset of individual criteria-- your final projects will be graded via self-assessment and instructor application of the rubrics you design today.
 
 ## What to submit
-Format is open: Markdown, a Google Doc link, or [COLM-style](https://www.overleaf.com/latex/templates/colm-2026-template/wbwzrwczsqvg) LaTeX compiled to PDF are all fine.
+Format is flexible: Markdown, a Google Doc, or [COLM-style](https://www.overleaf.com/latex/templates/colm-2026-template/wbwzrwczsqvg) PDF are all fine.
 
 * Proposed criteria: 6 to 8 criteria together worth 65% of the total project grade, with no single criterion worth more than 20%.
     * Proposed group criteria: 4-6 criteria, worth 45-60% of members' project grades
@@ -53,7 +53,7 @@ Format is open: Markdown, a Google Doc link, or [COLM-style](https://www.overlea
     * defining success based on labor, effort, or milestones (e.g. "comparing ROUGE scores to human assessments of generated summaries via an annotation study of 100 doubly annotated examples for full marks" + "or running only a pilot study or open ended annotation if we fail to converge on a set of reasonable annotation guidelines" for partial credit), and avoiding definitions of success based on outcomes that you cannot predict ahead of time (e.g. "a ROUGE score of at least 0.45 will earn full marks, while 0.35-0.45 will earn partial marks")
 * Specify criteria to be independent enough that they test different things (this also means you should try to limit obvious overlap with our base criteria)
 
-### Fixed criteria will cover:
+### Fixed criteria (35%) will cover:
 * clear, organized communication in the final report and presentation
 * clearly defined, well-motivated problem and scope
 * situation in related work
