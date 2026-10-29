@@ -14,6 +14,7 @@ For today's assignment, you will receive credit for making a good faith attempt 
 * Proposed criteria: 6 to 8 criteria together worth 65% of the total project grade, with no single criterion worth more than 20%.
     * Proposed group criteria: 4-6 criteria, worth 45-60% of members' project grades
     * Proposed individual criteria: at least 1 and up to 2 criteria per member, worth 5-20% of that member's project grade. Individual criteria may cover work that the member owns and/or may generally apply to all members
+* Pitfalls: general statement of what could lead to falling short of goals, and how you plan to avoid these potential pitfalls
 * Justification: 1-2 paragraphs explaining why the rubric overall and its scope fits your group's existing skills and your planned AI use
 * AI-use disclosure for this assignment, if you used AI (see below)
 * Optional: a tentative week-by-week timeline. If you submit it, we give feedback on it, but your project will not be graded on whether you stick to it
