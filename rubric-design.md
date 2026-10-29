@@ -11,6 +11,8 @@ Together with your group, you will design rubrics for your course projects and e
 For today's assignment, you will receive credit for making a good faith attempt at writing clear rubric criteria and eventually arriving at a rubric that you, your group members, and the instructors are happy with. You will not be penalized for being asked to iterate on an initial rubric. For each criterion, you will provide descriptions of what success looks like (for full credit), and optionally, what meeting "stretch" goals would look like (for full credit + up to 2 bonus points total), but you will only need to write a general statement of what could lead to falling short of goals, and how you plan to avoid these potential pitfalls. You will specify both group criteria and a small subset of individual criteria-- your final projects will be graded via self-assessment and instructor application of the rubrics you design today.
 
 ## What to submit
+Format is open: Markdown, a Google Doc link, or [COLM-style](https://www.overleaf.com/latex/templates/colm-2026-template/wbwzrwczsqvg) LaTeX compiled to PDF are all fine.
+
 * Proposed criteria: 6 to 8 criteria together worth 65% of the total project grade, with no single criterion worth more than 20%.
     * Proposed group criteria: 4-6 criteria, worth 45-60% of members' project grades
     * Proposed individual criteria: at least 1 and up to 2 criteria per member, worth 5-20% of that member's project grade. Individual criteria may cover work that the member owns and/or may generally apply to all members
