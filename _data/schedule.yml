@@ -268,7 +268,7 @@
   date: 2026-10-29
   lecture: "Assessing data and metric fit"
   activity:
-    - "Propose your own project rubric"
+    - "[Rubric design activity](/rubric-design/)"
   assignments:
     - text: "Lab 3 due **Fri 10/30**"
       tag: lab
@@ -289,7 +289,7 @@
     - "Post-Lab 3 activity"
     - "Project workshop"
   assignments:
-    - text: "Project rubric due (propose your own)"
+    - text: "[Project rubric](/rubric-design/) due (propose your own)"
       tag: prj
 
 # --- Week 12 · Unit 4 ---

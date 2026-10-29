@@ -29,7 +29,7 @@ Together with your group, you will put together a written proposal of the work y
   - Other proposals may be centered around building an artifact such as a corpus
   - If you have an idea that does not clearly fit either of these, please talk to us!
 - Explanation of how you will evaluate success 
-  - In a later assignment, you will propose detailed rubrics for your project. However, you should do some initial thinking for your project proposal, and you should be able to describe what a successfully executed project would look like and how you will know that it has been successfully executed
+  - In a [later assignment](/rubric-design/), you will propose detailed rubrics for your project. However, you should do some initial thinking for your project proposal, and you should be able to describe what a successfully executed project would look like and how you will know that it has been successfully executed
 - Descriptions of anticipated contributions of each group member
   - additionally, descriptions of things that each member is expecting to learn on the job, whether they are skills or conceptual understanding or both
 - A tentative plan to execute your proposed work! Things to mention here include, as applicable:
