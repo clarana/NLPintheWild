@@ -6,7 +6,7 @@ permalink: /post-lab3-activity/
 
 # Post-Lab 3 Activity
 
-You will answer these questions individually and submit by Tuesday, November 10 at 11:59pm ET (Reflection 5). You may discuss with classmates, but each student writes their own. Name the specific item and quote the specific guideline rule wherever you can. Answers should be written by human students! As usual, "raw" observations in incomplete sentences or with nonstandard grammar are welcome. **You only need to write answers for 3 of these questions!** We are generally looking for open-ended thoughts on how the activity went and any takeaways relevant to your project. 
+You will answer these questions individually and submit by Tuesday, November 10 at 11:59pm ET (Reflection 5). You may discuss with classmates, but each student writes their own. Name the specific item and quote the specific guideline rule wherever you can. Answers should be written by human students! As usual, "raw" observations in incomplete sentences or with nonstandard grammar are welcome. **Choose any 3 of Q1–6 and write about 3–5 sentences for each, plus your collaboration statement (Q7).** We are generally looking for open-ended thoughts on how the activity went and any takeaways relevant to your project. 
 
 When you are finished, write up your collaboration statement (Q7).
 
