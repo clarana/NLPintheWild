@@ -301,6 +301,7 @@
   unit: 4
   date: 2026-11-10
   lecture: "Leveraging existing models and data"
+  slides: "https://docs.google.com/presentation/d/1SkgJU34bYrR7FSRfFXdExJOACrOCeiZsyt_u6FhGDWY/edit?usp=sharing"
   activity:
     - "Exercise 16: ICL vs. RAG vs. fine-tuning"
   assignments:
