@@ -302,8 +302,6 @@
   date: 2026-11-10
   lecture: "Leveraging existing models and data"
   slides: "https://docs.google.com/presentation/d/1SkgJU34bYrR7FSRfFXdExJOACrOCeiZsyt_u6FhGDWY/edit?usp=sharing"
-  activity:
-    - "Exercise 16: ICL vs. RAG vs. fine-tuning"
   assignments:
     - "Reflection 5 due ([post-Lab 3 activity](/post-lab3-activity/))"
 - week: 12
@@ -331,7 +329,10 @@
   lecture_no: 18
   unit: 4
   date: 2026-11-19
-  lecture: "Synthetic data"
+  lecture: "Guest lecture: Synthetic data"
+  speaker:
+    name: "Vijay Viswanathan"
+    url: "https://www.cs.cmu.edu/~vijayv/"
   activity:
     - "Exercise 18: Training on synthetic data"
   assignments:
