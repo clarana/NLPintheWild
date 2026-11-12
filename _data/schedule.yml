@@ -310,6 +310,7 @@
   unit: 4
   date: 2026-11-12
   lecture: "Domain adaptation vs. generalization"
+  slides: "https://docs.google.com/presentation/d/1x8q0FARIleGdfEWx5Uk604HGAoI_f-GdW4rPAhZu3C8/edit?usp=sharing"
   activity:
     - "[Cross-disciplinary writing exercise](/cross-disciplinary-writing/)"
 
