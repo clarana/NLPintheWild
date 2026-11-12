@@ -6,6 +6,8 @@ permalink: /cross-disciplinary-writing/
 
 # Cross-disciplinary writing exercise
 
+**Due Tuesday, November 17 at 11:59pm ET.**
+
 By now, you have a sense of your project's goals and potential outcomes. Today, each member of your project group will write a (mock) abstract for your project as it would appear in a venue from their own field. With your group, you articulate and learn about disciplinary norms, as well as relate disciplinary writing conventions to [community](https://en.wikipedia.org/wiki/Discourse_community) norms and practices-- consider the intended audience, reviewing and publishing practices, and what counts as a contribution.
 
 ## Learning objectives
@@ -25,7 +27,7 @@ Note: This activity was designed with academic research in mind, so the examples
 
 ## Steps
 
-1. [individual] Name a specific set of research venues or a type of writing that you are familiar with. Describe in 3-5 sentences some of the characteristics of the community and about the writing conventions of your publication type.
+1. [individual] Name a specific set of research venues or a type of writing that you are familiar with. Describe in 3-5 sentences some of the characteristics of the community and the writing conventions of your publication type.
 2. [individual] Discuss in 2-3 sentences: Did you always find these conventions intuitive to follow? Do you feel that any in particular could be unintuitive to a newcomer? What function do these conventions serve? Do any of these conventions feel outdated?
 3. [individual] Write a draft of your abstract: see above for detailed instructions. Remember to include not only your abstract but also a list of conventions you are consciously following as you are writing it. Spend no more than 15 minutes on this initial step.
 4. [group] With your group, discuss your answers for 1-2. You may wish to show each other examples of abstracts from your respective fields to ground your discussion. Please write 3-7 sentences describing your observations and discussion. Make sure to describe the fields, communities, and publication types represented and examples shown if any-- beyond that, describe similarities, differences, impressions, confusions, amusements, etc. If there are multiple group members writing from the same field, did they have similar answers?
