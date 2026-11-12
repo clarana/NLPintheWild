@@ -311,7 +311,7 @@
   date: 2026-11-12
   lecture: "Domain adaptation vs. generalization"
   activity:
-    - "Cross-disciplinary writing exercise"
+    - "[Cross-disciplinary writing exercise](/cross-disciplinary-writing/)"
 
 # --- Week 13 · Unit 4 ---
 - week: 13
@@ -322,7 +322,7 @@
   activity:
     - "Project workshop (check-ins)"
   assignments:
-    - text: "Cross-disciplinary writing exercise due"
+    - text: "[Cross-disciplinary writing exercise](/cross-disciplinary-writing/) due"
       tag: prj
 - week: 13
   class_no: 23
