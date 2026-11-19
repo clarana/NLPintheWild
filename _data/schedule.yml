@@ -331,6 +331,7 @@
   unit: 4
   date: 2026-11-19
   lecture: "Guest lecture: Synthetic data"
+  slides: "https://docs.google.com/presentation/d/1Auvma4Gtqo-SaQy1HU0ZC02GlmsCoPYO6V6r2ZJXPtc/edit?usp=sharing"
   speaker:
     name: "Vijay Viswanathan"
     url: "https://www.cs.cmu.edu/~vijayv/"
