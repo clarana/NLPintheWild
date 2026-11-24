@@ -348,8 +348,9 @@
   unit: 4
   date: 2026-11-24
   lecture: "Lifelong learning"
+  slides: "https://docs.google.com/presentation/d/1EL_BaUX1r2oKOyiR2rXU3ENFRzsteFL9R-IePndDm68/edit?usp=sharing"
   activity:
-    - "Post-Lab 4 activity"
+    - "[Post-Lab 4 activity](/post-lab4-activity/)"
 - unit: 4
   date: 2026-11-26
   lecture: "Thanksgiving (no class)"
@@ -365,13 +366,14 @@
   activity:
     - "TBD"
   assignments:
-    - "Reflection 6 due (post-Lab 4 activity)"
+    - "Reflection 6 due ([post-Lab 4 activity](/post-lab4-activity/))"
 - week: 15
   class_no: 26
   unit: 4
   date: 2026-12-03
   lecture: "Final presentations"
-  activity: []
+  activity:
+    - "[Final presentations](/final-project/)"
 
 # --- Finals week · Unit 4 ---
 - week: 16
@@ -379,5 +381,5 @@
   date_label: "Finals week"
   lecture: ""
   assignments:
-    - text: "Final report due"
+    - text: "[Final report](/final-project/) due **Tue 12/8**"
       tag: prj

@@ -20,5 +20,5 @@ You will form a group of 2-4 students, with at least one student from each of Gr
 - [Proposal]({{ '/project-proposals/' | relative_url }})
 - Midway check-ins
 - Cross-disciplinary abstract writing exercise
-- Final presentation
-- Final report
+- [Final presentation]({{ '/final-project/' | relative_url }})
+- [Final report]({{ '/final-project/' | relative_url }})
